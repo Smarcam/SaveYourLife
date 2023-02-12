@@ -1,5 +1,7 @@
 # SaveYourLife
 
+<img src="/img/cerebro_1.png" alt="Cerebro">
+
 ## Trabajo Fin de Máster FP en IA y Big Data, CPIFP Malaga Tech Park
 
 Trabajo realizado por Samuel Martínez Camacho y Miguel Angel Ortega Durán
