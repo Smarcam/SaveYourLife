@@ -2,7 +2,14 @@ import streamlit as st
 from selenium import webdriver
 from nltk.chat.util import Chat, reflections
 from PIL import Image
-
+icon = Image.open('img/icon.png')
+st.set_page_config(
+	page_title = 'SaveYourLife Tumor Brain Predict!',
+	page_icon = icon,
+	layout = 'wide',
+	initial_sidebar_state = 'collapsed',
+	)
+st.sidebar.title("Main Menu")
 
 def google_search(term):
     if term:
