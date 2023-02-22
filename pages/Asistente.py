@@ -1,6 +1,21 @@
 import streamlit as st 
 from selenium import webdriver
 from nltk.chat.util import Chat, reflections
+from PIL import Image
+
+icon = Image.open('img/icon.png')
+st.set_page_config(
+	page_title = 'SaveYourLife Tumor Brain Predict!',
+	page_icon = icon,
+	layout = 'wide',
+	initial_sidebar_state = 'collapsed',
+	menu_items={
+		'Get Help': 'https://streamlit.io',
+		'Report a bug': 'https://github.com',
+		'About':'About your application: **Hello World!**'
+	}
+	)
+st.sidebar.title("Main Menu")
 
 def google_search(term):
     if term:
@@ -41,3 +56,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+# LINK TO THE CSS FILE
+with open('.streamlit/style.css')as f:
+ st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
