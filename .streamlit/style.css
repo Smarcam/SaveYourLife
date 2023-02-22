@@ -3,12 +3,3 @@ header {visibility: hidden;}
 footer {visibility: hidden;}
 .css-lyhoi4.e16nr0p32 {visibility: hidden;}
 .viewerBadge_link__1S137 {visibility: hidden;}
-icon = Image.open('img/icon.png')
-st.set_page_config(
-	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = icon,
-	layout = 'wide',
-	initial_sidebar_state = 'collapsed',
-	)
-st.sidebar.title("Main Menu")
-
