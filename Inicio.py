@@ -102,6 +102,10 @@ col1, col2, col3 = st.columns([10, 10, 10])
 
 with col1:
    # Llama a la función con la ruta de la imagen y la URL de destino
+   st.markdown('''
+    <a href="https://saveyourlife.streamlit.app/Brain_tumor_predict">
+        <img src="img/cerebro.png" />
+    </a>''',
    le.image_clickable("img/cerebro.png", "pages/Brain_tumor_predict.py")
    with st.expander("Tumor cerebral"):
       st.write("Un tumor cerebral es una masa o bulto de células anormales que se encuentra en el cerebro.\
