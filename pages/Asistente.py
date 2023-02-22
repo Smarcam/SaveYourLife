@@ -36,7 +36,7 @@ pairs = [
     ['abrir (.*)', ['Lo siento, yo puedo buscarte %1 . Estoy en el parque se solipandi. y no puedo hacer esas cosas chikillo que me va a ve mi mare.']],
     ['piensas si hay un creador', ['si, aro ompare si no como voy a esta aqui hablando']],
     ['dime algo sobre ti', ['Pos aye estuve de aguaora por que venia la tres patos con mi primo']],
-    ['quien soy', ['a mi que coño me importa"']],
+    ['quien soy', ['a mi que coño me importa']],
     ['quien te creo', ['un jartible.']],
     ['', ['En que puedo ayudarte baby']]
 ]
