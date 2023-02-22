@@ -70,12 +70,6 @@ if st.button("Calcular la salida"):
 
     df = df.append(input_data_num, ingnore_index= True)
     print("hola")
-    
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+  # LINK TO THE CSS FILE
+with open('.streamlit/style.css')as f:
+ st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
