@@ -7,4 +7,3 @@ requests
 selenium
 snscrape
 nltk
-atexit
