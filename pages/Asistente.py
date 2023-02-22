@@ -23,6 +23,7 @@ pairs = [
     ['dime algo sobre ti', ['Pos aye estuve de aguaora por que venia la tres patos con mi primo']],
     ['quien soy', ['a mi que coño me importa"']],
     ['quien te creo', ['un jartible.']],
+    ['', ['En que puedo ayudarte baby']]
 ]
 
 st.title("Chatbot")
