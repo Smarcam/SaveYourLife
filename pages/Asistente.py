@@ -58,12 +58,6 @@ if __name__ == '__main__':
     if st.button('Enviar'):
         response = chatbot(user_input)
         st.write(response)
-        
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+ # LINK TO THE CSS FILE
+with open('.streamlit/style.css')as f:
+ st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
