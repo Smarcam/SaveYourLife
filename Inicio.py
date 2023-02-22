@@ -113,7 +113,7 @@ with col1:
 
 with col2:
    # Llama a la función con la ruta de la imagen y la URL de destino
-   le.image_clickable("img/cerebro.png", "pages/Brain_tumor_predict.py")
+   le.image_clickable("img/cerebro.png", "https://saveyourlife.streamlit.app/Brain_tumor_predict")
    with st.expander("Cancer de mama"):
       st.write("El cáncer de mama es un tipo de cáncer que se forma en las células de las mamas. Después del cáncer de piel, el cáncer de mama es el\
             tipo más común diagnosticado en mujeres en Estados Unidos. El cáncer de mama se puede presentar tanto en hombres como en mujeres; sin embargo,\
