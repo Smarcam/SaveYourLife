@@ -7,6 +7,5 @@ requests
 selenium
 snscrape
 nltk
-base64
 PIL
 atexit
