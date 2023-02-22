@@ -22,12 +22,6 @@ chart_data = pd.DataFrame(
     columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
-
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+# LINK TO THE CSS FILE
+with open('.streamlit/style.css')as f:
+ st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
