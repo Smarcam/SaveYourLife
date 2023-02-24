@@ -39,7 +39,7 @@ st.title("Chatbot")
 
 
 def main():
-    ref = st.text_input("Dime argo cojones")
+    ref = st.text_input("¿En que puedo ayudarte?")
 
     chat = Chat(pairs, reflections)
     respo = chat.respond(ref)
