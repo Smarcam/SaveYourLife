@@ -24,7 +24,7 @@ def google_search(term):
         st.warning("Por favor, ingrese un término de búsqueda.")
 
 pairs = [
-    ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. En que puedo ayudarte?']],
+    ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
     ['hola', ['Hola Soy medical robot. ¿Que quiere?']],
     ['que puedes hacer', ['puedo hacer muchas cosas como buscar , cosas sobre medicina y mucho más.']],
     ['abrir (.*)', ['Lo siento, yo puedo buscarte %1 . No tengo acceso a eso.']],
