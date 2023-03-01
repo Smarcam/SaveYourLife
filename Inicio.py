@@ -6,11 +6,9 @@ import src.search as srch
 import src.load_event as le
 from functions import *
 
-icon = Image.open('img/icon.png')
-
 st.set_page_config(
 	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = icon,
+	page_icon = 'img/icon.png',
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
 	menu_items={
