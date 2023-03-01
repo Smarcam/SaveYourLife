@@ -14,10 +14,9 @@ st.set_page_config(
 	initial_sidebar_state = 'collapsed',
 	)
 
-st.sidebar.title("Main Menu")
 with st.sidebar:
             selected = option_menu(
-                menu_title="Main Menu",  # required
+                menu_title="Menu",  # required
                 options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
                 icons=["file-earmark-medical", "bezier2", "chat", "envelope"],  # optional
                 menu_icon="capsule",  # optional file-earmark-medical 
