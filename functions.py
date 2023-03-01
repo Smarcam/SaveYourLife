@@ -1,3 +1,4 @@
+import streamlit as st
 # LINK TO THE CSS FILE
 def importar_css():
   with open('.streamlit/style.css')as f:
