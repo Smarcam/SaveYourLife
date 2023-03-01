@@ -4,6 +4,7 @@ import streamlit.components.v1 as components
 from PIL import Image
 import src.search as srch
 import src.load_event as le
+from functions import *
 
 icon = Image.open('img/icon.png')
 
@@ -124,7 +125,5 @@ with col2:
 
 with col3:
    components.html('<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',height=420,width=350)
-
-# LINK TO THE CSS FILE
-with open('.streamlit/style.css')as f:
-   st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+#CCS
+css = importar_css()
