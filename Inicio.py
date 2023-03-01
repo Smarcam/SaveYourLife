@@ -26,11 +26,11 @@ if selected == "Inicio":
      open("Inicio.py")
 if selected == "Brain tumor predict":
     open('pages/Brain_tumor_predict.py')
-    st.markdown('href="https://saveyourlife.streamlit.app/"')
 if selected == "Asistente":
     open('pages/Asistente.py')
 if selected == "About me":
     open('pages/About_me.py')
+
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
 
