@@ -23,7 +23,7 @@ with st.sidebar:
                 default_index=0,  # optional
             )
 if selected == "Inicio":
-    open("https://saveyourlife.streamlit.app/")
+     webbrowser.open("https://saveyourlife.streamlit.app/")
 if selected == "Brain tumor predict":
     href="https://saveyourlife.streamlit.app/Brain_tumor_predict"
     st.markdown('href="https://saveyourlife.streamlit.app/"')
