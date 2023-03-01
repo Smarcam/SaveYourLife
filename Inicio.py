@@ -12,11 +12,23 @@ st.set_page_config(
 	page_icon = 'img/icon.png',
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
-        options=["Home", "Projects", "Contact"],
-        icons=["house", "book", "envelope"],
-        menu_icon="cast",
-        default_index=0,
 	)
+
+st.sidebar.title("Main Menu")
+with st.sidebar:
+            selected = option_menu(
+                menu_title="Main Menu",  # required
+                options=["Home", "Projects", "Contact"],  # required
+                icons=["house", "book", "envelope"],  # optional
+                menu_icon="cast",  # optional
+                default_index=0,  # optional
+            )
+if selected == "Home":
+    st.title(f"You have selected {selected}")
+if selected == "Projects":
+    st.title(f"You have selected {selected}")
+if selected == "Contact":
+    st.title(f"You have selected {selected}")
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
