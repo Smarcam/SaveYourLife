@@ -1,75 +1,99 @@
-import pandas as pd
-import numpy as np
 import streamlit as st
-import streamlit.components.v1 as components
-from PIL import Image
-icon = Image.open('img/icon.png')
+import cv2
+import numpy as np
+import time
+import imutils
+from tensorflow import keras
+from tensorflow.keras.optimizers import RMSprop
+
 st.set_page_config(
-	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = icon,
-	layout = 'wide',
-	initial_sidebar_state = 'collapsed',
-	menu_items={
-		'Get Help': 'https://streamlit.io',
-		'Report a bug': 'https://github.com',
-		'About':'About your application: **Hello World!**'
-	}
-	)
-st.sidebar.title("Main Menu")
+    page_title="SaveYourLife Tumor Brain Predict",
+    page_icon='img/icon.png',
+    initial_sidebar_state="collapsed",
+    layout="wide"
+)
 
-st.markdown("<h1 style='text-align: center; color: white;'>Predicción de Tumores Cerebrales</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: white;'>Proyecto Deep Learning</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Predicción de Tumores Cerebrales</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: black;'>Proyecto Deep Learning</h2>", unsafe_allow_html=True)
 
-df = pd.DataFrame( columns = ['Nombre', 'Apellidos','Edad', 'Sexo', 'Numero de la Seguridad Social','Ecg en reposo', 'imagen'])
 image = 'img/cerebro.png'
+image_2 = 'img/MRI.gif'
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns([11,5,11])
 
 with col1:
     st.write("")
 
 with col2:
-    st.image(image,  use_column_width= 'auto')
+    st.image(image, use_column_width='auto')
 
 with col3:
     st.write("")
 
-nombre = st.text_input("Introduce el nombre del paciente", max_chars=10, value="Pepe", help= 'Introduce el nombre del paciente')
-apellidos = st.text_input("Introduce los apellidos del paciente", max_chars=30, value="Viruela Sarampión", help= 'Introduce los apellidos del paciente')
 
-col1, col2 = st.columns(2)
+# Función para procesar la imagen y realizar la predicción
+def process_image(image):
+    # Redimensiona la imagen a las dimensiones de entrada del modelo
+    image = cv2.resize(image, (224, 224))
+    # Convierte la imagen a escala de grises
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # Normaliza los valores de los píxeles
+    image = image / 255.0
+    # Añade una dimensión adicional para la dimensión del batch
+    image = np.expand_dims(image, axis=0)
+    # Realiza la predicción
+    prediction = keras_model.predict(image)
+    # Devuelve la clase con la mayor probabilidad
+    return np.argmax(prediction)
 
-with col1:
-    edad = st.number_input("edad",step=1, value=20, help= 'Introduce la edad del paciente')
-    numero_ss = st.text_input(" numero seguridad social", max_chars=11, help= 'Introduce el numero de la seguridad social')
+# Carga la imagen con Streamlit y muestra la predicción
+uploaded_file = st.file_uploader("Cargar imagen", type=["jpg", "jpeg", "png"])
 
-
-with col2:
-    sexo = st.selectbox("sexo", ("Hombre", "Mujer"), help= 'Introduce el sexo del paciente')
-    ecg_reposo = st.selectbox("Resultados electrocardiográficos en reposo", ["Normal", "Tener anomalía de la onda ST-T", "Mostrando una hipertrofia ventricular izquierda probable"], help= 'Introduce los resultados del electrocardigrama en reposp del paciente')
-
-# Function para leer y manipular imagenes
-def load_image(img):
-    im = Image.open(img)
-    image = np.array(im)
-    return image
-
-# subir los ficheros de la imagen 
-uploadFile = st.file_uploader(label="subir imagen", type=['jpg', 'png'])
-
-# chequeando el formato de la iamgen
-if uploadFile is not None:
-    img = load_image(uploadFile)
-    st.image(img)
-    st.write("Imagen subida correctamente")
+if not uploaded_file:
+    st.warning("Por favor, carga una imagen para continuar.")
 else:
-    st.write("la imagen debe tener un formato JPG/PNG.")
+    try:
+        # Lee la imagen cargada y la convierte a un array NumPy
+        file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
+        image = cv2.imdecode(file_bytes, 1)
 
-if st.button("Calcular la salida"):
-    input_data_num = [nombre, apellidos, edad, sexo, numero_ss, ecg_reposo, img]
+        # Carga el modelo previamente entrenado
+        with st.spinner('Cargando modelo...'):
+            time.sleep(1)
+            keras_model = keras.models.load_model('model/Brain_model.h5')
 
-    df = df.append(input_data_num, ingnore_index= True)
-    print("hola")
-  # LINK TO THE CSS FILE
-with open('.streamlit/style.css')as f:
- st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+            keras_model.compile(optimizer=RMSprop(learning_rate=1e-4),
+                            loss='sparse_categorical_crossentropy',
+                            metrics=['acc'])
+
+        # Agrega un botón para realizar la predicción, solo este visible cuando se cargue la imagen 
+        button_clicked = st.button("Realizar predicción")
+        if button_clicked:
+            # Crea un placeholder para la imagen gif
+            placeholder = st.empty()
+            # Muestra el spinner antes de la predicción
+            with st.spinner('Realizando predicción...'):
+                # Muestra la imagen gif en el placeholder
+                gif_ref = placeholder.image(image_2)
+                 # Espera 5 segundos para simular el procesamiento
+                time.sleep(5)
+                # Elimina la imagen gif del placeholder
+                del gif_ref
+                 # Espera 5 segundos para simular el procesamiento
+                time.sleep(1)
+                # Optimiza la imagen para acelerar la predicción
+                processed_image = imutils.resize(image, width=400)
+                # Realiza la predicción y muestra el resultado en la interfaz
+                prediction = process_image(processed_image)
+                # Elimina el placeholder
+                placeholder.empty()
+                # Muestra la imagen en la interfaz
+                st.image(image, channels="BGR", caption="Imagen cargada")
+                # Realiza la predicción y muestra el resultado en la interfaz
+                prediction = process_image(image)
+                if prediction == 0:
+                    st.write("La imagen corresponde a un cerebro con tumor")
+                elif prediction == 1:  
+                    st.write("La imagen corresponde a un cerebro sano")
+    except:
+        st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
