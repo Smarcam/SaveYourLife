@@ -9,3 +9,4 @@ snscrape
 nltk
 imutils
 tensorflow
+opencv-python-headless
