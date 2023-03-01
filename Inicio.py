@@ -20,7 +20,7 @@ with st.sidebar:
                 menu_title="Main Menu",  # required
                 options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
                 icons=["file-earmark-medical", "clipboard2-pulse-fill", "envelope", "envelope"],  # optional
-                menu_icon="bi bi-hospital",  # optional
+                menu_icon="hospital",  # optional
                 default_index=0,  # optional
             )
 if selected == "Home":
