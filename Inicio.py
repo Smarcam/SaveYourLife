@@ -6,13 +6,6 @@ from PIL import Image
 import src.search as srch
 import src.load_event as le
 from functions import *
-
-st.set_page_config(
-	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = 'img/icon.png',
-	layout = 'wide',
-	initial_sidebar_state = 'collapsed',
-	)
 with st.sidebar:
             selected = option_menu(
                 menu_title="Main Menu",  # required
