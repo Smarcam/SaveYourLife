@@ -23,9 +23,7 @@ with st.sidebar:
                 default_index=0,  # optional
             )
 if selected == "Inicio":
-    url = 'https://saveyourlife.streamlit.app/'
-    link = f'<a href="{url}" target="_blank">Ir a Google</a>'
-    st.markdown(link, unsafe_allow_html=True)
+    open("https://saveyourlife.streamlit.app/")
 if selected == "Brain tumor predict":
     href="https://saveyourlife.streamlit.app/Brain_tumor_predict"
     st.markdown('href="https://saveyourlife.streamlit.app/"')
