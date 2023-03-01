@@ -5,6 +5,7 @@ import time
 import imutils
 from tensorflow import keras
 from tensorflow.keras.optimizers import RMSprop
+from functions import *
 
 st.set_page_config(
     page_title="SaveYourLife Tumor Brain Predict",
@@ -97,3 +98,5 @@ else:
                     st.write("La imagen corresponde a un cerebro sano")
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
+#CCS
+css = importar_css()
