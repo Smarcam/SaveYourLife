@@ -17,17 +17,19 @@ st.set_page_config(
 with st.sidebar:
             selected = option_menu(
                 menu_title="Menu",  # required
-                options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
+                options=["Inicio", "Brain tumor predict", "Asistente", "About me"],  # required
                 icons=["file-earmark-medical", "bezier2", "chat", "envelope"],  # optional
                 menu_icon="bandaid",  # optional file-earmark-medical 
                 default_index=0,  # optional
             )
-if selected == "Home":
-    st.title(f"You have selected {selected}")
-if selected == "Projects":
-    st.title(f"You have selected {selected}")
-if selected == "Contact":
-    st.title(f"You have selected {selected}")
+if selected == "Inicio":
+    href="https://saveyourlife.streamlit.app/"
+if selected == "Brain tumor predict":
+    href="https://saveyourlife.streamlit.app/Brain_tumor_predict"
+if selected == "Asistente":
+    href="https://saveyourlife.streamlit.app/Asistente"
+if selected == "About me":
+    href="https://saveyourlife.streamlit.app/About_me"
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
