@@ -13,6 +13,17 @@ st.set_page_config(
 	)
 st.sidebar.title("Main Menu")
 
+def google_search(term):
+    if term:
+        global browser
+        browser = webdriver.Chrome()
+        browser.get(f"https://www.google.com/search?q={term}")
+
+        # Espera hasta que se cargue la página de resultados
+        browser.implicitly_wait(5)
+
+    else:
+        st.warning("Por favor, ingrese un término de búsqueda.")
 pairs = [
     ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
     ['hola', ['Hola Soy medical robot. ¿Que quiere?']],
@@ -35,7 +46,7 @@ def main():
     respo = chat.respond(ref)
     if "abrir" in ref:
         search_term = ref.split("abrir")[1]
-        navigate_to_search(search_term)
+        google_search(search_term)
     st.write(respo)
 
 if __name__ == "__main__":
