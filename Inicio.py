@@ -25,13 +25,12 @@ with st.sidebar:
 if selected == "Inicio":
      open("Inicio.py")
 if selected == "Brain tumor predict":
-    open('pages/"Brain_tumor_predict.py"')
+    open('pages/Brain_tumor_predict.py')
     st.markdown('href="https://saveyourlife.streamlit.app/"')
 if selected == "Asistente":
-    href="https://saveyourlife.streamlit.app/Asistente"
+    open('pages/Asistente.py')
 if selected == "About me":
-    href="https://saveyourlife.streamlit.app/About_me"
-
+    open('pages/About_me.py')
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
 
