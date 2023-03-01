@@ -12,10 +12,10 @@ st.set_page_config(
 	page_icon = 'img/icon.png',
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
-            options=["Home", "Projects", "Contact"],
-            icons=["house", "book", "envelope"],
-            menu_icon="cast",
-            default_index=0,
+        options=["Home", "Projects", "Contact"],
+        icons=["house", "book", "envelope"],
+        menu_icon="cast",
+        default_index=0,
 	)
 
 title_container = st.container()
