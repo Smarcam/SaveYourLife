@@ -18,8 +18,8 @@ st.sidebar.title("Main Menu")
 with st.sidebar:
             selected = option_menu(
                 menu_title="Main Menu",  # required
-                options=["Home", "Projects", "Contact"],  # required
-                icons=["house", "book", "envelope"],  # optional
+                options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
+                icons=["house", "book", "envelope", "envelope"],  # optional
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
             )
