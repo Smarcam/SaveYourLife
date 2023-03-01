@@ -4,10 +4,9 @@ from nltk.chat.util import Chat, reflections
 from PIL import Image
 from functions import *
 
-icon = Image.open('img/icon.png')
 st.set_page_config(
 	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = icon,
+	page_icon='img/icon.png',
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
 	)
