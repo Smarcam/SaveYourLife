@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 import streamlit.components.v1 as components
 from PIL import Image
+from functions import *
 icon = Image.open('img/icon.png')
 st.set_page_config(
 	page_title = 'SaveYourLife Tumor Brain Predict!',
@@ -22,6 +23,6 @@ chart_data = pd.DataFrame(
     columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
-# LINK TO THE CSS FILE
-with open('.streamlit/style.css')as f:
- st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+
+#CSS
+css = importar_css()
