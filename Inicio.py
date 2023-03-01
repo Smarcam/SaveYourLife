@@ -23,6 +23,12 @@ with st.sidebar:
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
             )
+if selected == "Home":
+    st.title(f"You have selected {selected}")
+if selected == "Projects":
+    st.title(f"You have selected {selected}")
+if selected == "Contact":
+    st.title(f"You have selected {selected}")
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
