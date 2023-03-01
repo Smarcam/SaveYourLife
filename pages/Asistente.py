@@ -2,6 +2,8 @@ import streamlit as st
 from selenium import webdriver
 from nltk.chat.util import Chat, reflections
 from PIL import Image
+from functions import *
+
 icon = Image.open('img/icon.png')
 st.set_page_config(
 	page_title = 'SaveYourLife Tumor Brain Predict!',
@@ -50,6 +52,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-# LINK TO THE CSS FILE
-with open('.streamlit/style.css')as f:
- st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+#CSS 
+css = importar_css()
