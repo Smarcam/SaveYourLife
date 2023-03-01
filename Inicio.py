@@ -19,8 +19,8 @@ with st.sidebar:
             selected = option_menu(
                 menu_title="Main Menu",  # required
                 options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
-                icons=["capsule", "bezier2", "chat", "envelope"],  # optional
-                menu_icon="bandaid",  # optional file-earmark-medical 
+                icons=["file-earmark-medical", "bezier2", "chat", "envelope"],  # optional
+                menu_icon="capsule",  # optional file-earmark-medical 
                 default_index=0,  # optional
             )
 if selected == "Home":
