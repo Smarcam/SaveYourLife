@@ -3,6 +3,3 @@ import streamlit as st
 def importar_css():
   with open('.streamlit/style.css')as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
-      
-def icon_image():
-  icon = Image.open('img/icon.png')
