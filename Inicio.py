@@ -19,8 +19,8 @@ with st.sidebar:
             selected = option_menu(
                 menu_title="Main Menu",  # required
                 options=["Inicio", "Brain tumor predict ", "Asistente", "About me"],  # required
-                icons=["house", "book", "envelope", "envelope"],  # optional
-                menu_icon="cast",  # optional
+                icons=["house", "clipboard2-pulse", "envelope", "envelope"],  # optional
+                menu_icon="hospital",  # optional
                 default_index=0,  # optional
             )
 if selected == "Home":
