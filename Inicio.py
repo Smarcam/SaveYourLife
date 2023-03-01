@@ -22,7 +22,6 @@ with st.sidebar:
                 menu_icon="cast",  # optional
                 default_index=0,  # optional
             )
-        return selected
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
