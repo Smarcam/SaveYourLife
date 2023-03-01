@@ -7,6 +7,5 @@ requests
 selenium
 snscrape
 nltk
-time
 imutils
 tensorflow
