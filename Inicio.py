@@ -11,14 +11,18 @@ st.set_page_config(
 	page_icon = 'img/icon.png',
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
-	menu_items={
-		'Get Help': 'https://streamlit.io',
-		'Report a bug': 'https://github.com',
-		'About':'About your application: **Hello World!**'
-	}
 	)
 
 st.sidebar.title("Main Menu")
+with st.sidebar:
+            selected = option_menu(
+                menu_title="Main Menu",  # required
+                options=["Home", "Projects", "Contact"],  # required
+                icons=["house", "book", "envelope"],  # optional
+                menu_icon="cast",  # optional
+                default_index=0,  # optional
+            )
+        return selected
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
