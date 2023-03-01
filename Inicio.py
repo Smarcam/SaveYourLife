@@ -13,8 +13,6 @@ st.set_page_config(
 	layout = 'wide',
 	initial_sidebar_state = 'collapsed',
 	)
-
-st.sidebar.title("Main Menu")
 with st.sidebar:
             selected = option_menu(
                 menu_title="Main Menu",  # required
