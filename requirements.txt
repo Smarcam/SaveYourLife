@@ -9,4 +9,4 @@ imutils
 tensorflow
 opencv-python-headless
 protobuf==3.20
-googlesearch-pyton
+googlesearch-python
