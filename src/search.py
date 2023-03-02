@@ -20,6 +20,7 @@ def on_enter_pressed(term):
             # Abre la búsqueda en una nueva pestaña del navegador
             url = f"https://www.google.com/search?q={'+'.join(term.split())}"
             webbrowser.open_new_tab(url)
+            st.experimental_rerun()
             st.stop()
 
         else:
