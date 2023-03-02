@@ -92,7 +92,7 @@ col1, col2, col3 = st.columns([10, 10, 10])
 
 with col1:
    # Llama a la función con la ruta de la imagen y la URL de destino
-   le.image_clickable("img/cerebro.png", "https://saveyourlife.streamlit.app/Brain%20Tumor", "target='_self'")
+   le.image_clickable("img/cerebro.png", "https://saveyourlife.streamlit.app/Brain%20Tumor")
    with st.expander("Tumor cerebral"):
       st.write("Un tumor cerebral es una masa o bulto de células anormales que se encuentra en el cerebro.\
             Existen varios tipos de tumores cerebrales. Algunos tumores cerebrales no son cancerosos (benignos) y algunos tumores sí lo son (malignos).\
