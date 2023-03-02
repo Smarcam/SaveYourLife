@@ -7,12 +7,8 @@ import src.load_event as le
 from st_pages import Page, Section, show_pages, add_page_title
 from functions import *
 
-st.set_page_config(
-	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon = 'img/icon.png',
-	layout = 'wide',
-	initial_sidebar_state = 'collapsed',
-	)
+#PageConfig
+page_config = importar_config()
 
 show_pages(
     [
