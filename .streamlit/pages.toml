@@ -1,10 +1,7 @@
-from PIL import Image
-image = Image.open('img/logo.png')
-
 [[pages]]
 path = "Inicio.py"
 name = "Inicio"
-icon = image
+icon = "img/logo.png"
 
 [[pages]]
 path = "pages/Asistente.py"
