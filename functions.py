@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import streamlit as st
 # LINK TO THE CSS FILE
 def importar_css():
