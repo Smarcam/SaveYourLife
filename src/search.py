@@ -6,7 +6,7 @@ from googlesearch import search as google_search
 def my_google_search(query):
     if query:
         results = []
-        for j in google_search(query, num_results=10):
+        for j in google_search(query):
             results.append(j)
         return results
     else:
