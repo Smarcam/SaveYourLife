@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import src.search as srch
 import src.load_event as le
+from st_pages import Page, Section, show_pages, add_page_title
 from functions import *
 
 st.set_page_config(
