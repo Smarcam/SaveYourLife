@@ -1,30 +1,25 @@
-import atexit
 import streamlit as st
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+import webbrowser
+from googlesearch import search as google_search
 
-# Función de limpieza que se ejecuta al finalizar el script
-@atexit.register
-def clean_up():
-    try:
-        browser.quit()
-    except NameError:
-        pass
 
-def google_search(term):
-    if term:
-        global browser
-        browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        browser = webdriver.Chrome()
-        browser.get(f"https://www.google.com/search?q={term}")
-
-        # Espera hasta que se cargue la página de resultados
-        browser.implicitly_wait(5)
-
+def my_google_search(query):
+    if query:
+        results = []
+        for j in google_search(query, num_results=10):
+            results.append(j)
+        return results
     else:
         st.warning("Por favor, ingrese un término de búsqueda.")
 
+
 def on_enter_pressed(term):
     if term:
-        google_search(term)
+        results = my_google_search(term)
+        if results:
+            # Abre la búsqueda en una nueva pestaña del navegador
+            url = f"https://www.google.com/search?q={'+'.join(term.split())}"
+            webbrowser.open_new_tab(url)
+            st.stop()
+        else:
+            st.warning("No se encontraron resultados para su búsqueda.")
