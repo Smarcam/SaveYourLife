@@ -2,10 +2,7 @@ pandas
 scikit-learn
 streamlit
 streamlit_option_menu
-joblib
 numpy
-requests
-selenium==3.141.0
 snscrape
 nltk
 imutils
