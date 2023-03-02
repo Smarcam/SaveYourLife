@@ -3,4 +3,11 @@ import streamlit as st
 def importar_css():
   with open('.streamlit/style.css')as f:
      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
-# selenium
+# CONFIG FOR PAGE
+def importar_config():
+  st.set_page_config(
+      page_title="SaveYourLife Tumor Brain Predict",
+      page_icon='img/icon.png',
+      initial_sidebar_state="collapsed",
+      layout="wide"
+  )
