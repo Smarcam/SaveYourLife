@@ -24,11 +24,10 @@ col1, col2 = st.columns([3, 20])
 
 image = Image.open('img/logo.png')
 
-with st.container():
-    st.header("Buscador")
-    term = st.text_input("Introduzca su búsqueda:")
-    if term:
-        srch.on_enter_pressed(term)
+st.header("Buscador")
+term = st.text_input("Introduzca su búsqueda:")
+if term:
+srch.on_enter_pressed(term)
 
 st.header("Buscador")
 term = st.text_input("Introduzca su búsqueda:")
