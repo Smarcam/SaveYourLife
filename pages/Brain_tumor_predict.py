@@ -7,12 +7,8 @@ from tensorflow import keras
 from tensorflow.keras.optimizers import RMSprop
 from functions import *
 
-st.set_page_config(
-    page_title="SaveYourLife Tumor Brain Predict",
-    page_icon='img/icon.png',
-    initial_sidebar_state="collapsed",
-    layout="wide"
-)
+#PageConfig
+page_config = importar_config()
 
 st.markdown("<h1 style='text-align: center; color: black;'>Predicción de Tumores Cerebrales</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: black;'>Proyecto Deep Learning</h2>", unsafe_allow_html=True)
