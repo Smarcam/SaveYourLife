@@ -19,8 +19,9 @@ show_pages(
     ]
 )
 
+title_container = st.container()
+col1, col2 = st.columns([3, 20])
 image = Image.open('img/logo.png')
-
 
 with title_container:
    with col1:
@@ -33,7 +34,6 @@ with st.container():
     term = st.text_input("Introduzca su búsqueda:")
     if term:
         srch.on_enter_pressed(term)
-
 
 col1, col2 = st.columns([20, 8])
 with col1:
