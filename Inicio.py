@@ -7,7 +7,11 @@ from st_pages import Page, Section, show_pages, add_page_title
 from functions import *
 
 #PageConfig
-page_config = importar_config()
+st.set_page_config(
+     page_title="SaveYourLife Tumor Brain Predict",
+     page_icon='img/icon.png',
+     initial_sidebar_state="collapsed",
+     layout="wide")
 #Menu
 add_page_title()
 show_pages(
