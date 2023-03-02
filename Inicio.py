@@ -29,21 +29,23 @@ with st.container():
 
 col1, col2 = st.columns([20, 8])
 with col1:
-   st.markdown('La página web del SaveYourLife de Predicción de Tumores es un sitio dedicado a brindar información y servicios relacionados con\
-      la detección temprana y la predicción de tumores mediante el uso de inteligencia artificial. En la página principal, los visitantes pueden encontrar información\
-      sobre los trabajos que realizamos, el equipo de investigación, las tecnologías utilizadas y los resultados obtenidos. También se destacan los servicios disponibles, como la detección\
-      temprana de cáncer mediante la evaluación de imágenes médicas y la predicción del riesgo de desarrollar ciertos tipos de tumores.')
+     st.markdown("""
+      La página web del SaveYourLife de Predicción de Tumores es un sitio dedicado a brindar información y servicios relacionados con la detección temprana 
+      y la predicción de tumores mediante el uso de inteligencia artificial. En la página principal, los visitantes pueden encontrar información sobre los 
+      trabajos que realizamos, el equipo de investigación, las tecnologías utilizadas y los resultados obtenidos. También se destacan los servicios disponibles, 
+      como la detección temprana de cáncer mediante la evaluación de imágenes médicas y la predicción del riesgo de desarrollar ciertos tipos de tumores. 
+      
+      Además, la página web ofrece acceso a herramientas y recursos para pacientes y profesionales de la salud, como la carga de imagenes para la evaluación médica
+      y la visualización de resultados de investigaciones recientes.
 
-   st.markdown('Además, la página web ofrece acceso a herramientas y recursos para pacientes y profesionales de la salud, como la carga de imagenes para la evaluación médica\
-      y la visualización de resultados de investigaciones recientes.')
+      Los visitantes también pueden acceder a un blog de twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación 
+      de tumores y la inteligencia artificial.
 
-   st.markdown('Los visitantes también pueden acceder a un blog de twitter actualizado regularmente con noticias, estudios\
-      y artículos relacionados con la investigación de tumores y la inteligencia artificial.')
-
-   st.markdown('La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos\
-      en el tema como para el público en general. La plataforma es moderna y segura, y\
-      se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática para garantizar la protección de la información del usuario y la privacidad de los datos.')
-
+      La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
+      el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
+      para garantizar la protección de la información del usuario y la privacidad de los datos.
+      """)
+      
 with col2:
    st.image('img/inicio.jpeg')
 
