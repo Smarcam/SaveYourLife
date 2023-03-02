@@ -24,11 +24,11 @@ col1, col2 = st.columns([3, 20])
 
 image = Image.open('img/logo.png')
 
-with title_container:
-   with col1:
-      st.image(image, width=130)
-   with col2:
-      st.markdown('<h1 style="color: #28cffe;">SaveYourLife</h1>',unsafe_allow_html=True)
+with st.container():
+    st.header("Buscador")
+    term = st.text_input("Introduzca su búsqueda:")
+    if term:
+        srch.on_enter_pressed(term)
 
 st.header("Buscador")
 term = st.text_input("Introduzca su búsqueda:")
