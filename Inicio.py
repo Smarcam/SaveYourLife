@@ -6,18 +6,10 @@ import src.load_event as le
 from st_pages import Page, Section, show_pages, add_page_title
 from functions import *
 
-image = Image.open('img/logo.png')
 #PageConfig
 page_config = importar_config()
 #Menu
-show_pages(
-    [
-        Page("Inicio.py", "Inicio", ":brain:"),
-        Page("pages/Brain_tumor_predict.py", "Tumor Brain Predict", ":books:"),
-	Page("pages/About_me.py", "Sobre Nosotros", ":books:"),
-	Page("pages/Asistente.py", "Asistente", ":books:"),
-    ]
-)
+show_pages_from_config()
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
