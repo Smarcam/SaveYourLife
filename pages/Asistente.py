@@ -4,13 +4,6 @@ from PIL import Image
 from functions import *
 import src.search as srch
 
-st.set_page_config(
-	page_title = 'SaveYourLife Tumor Brain Predict!',
-	page_icon='img/icon.png',
-	layout = 'wide',
-	initial_sidebar_state = 'collapsed',
-	)
-st.sidebar.title("Main Menu")
 
 pairs = [
     ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
