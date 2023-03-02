@@ -24,7 +24,7 @@ with st.sidebar:
 if selected == "Inicio":
      open("Inicio.py")
 if selected == "Brain tumor predict":
-    st.markdown('<a href="https://saveyourlife.streamlit.app/Brain_tumor_predict target="_self">...</a>', unsafe_allow_html=True)
+    st.markdown('href="https://saveyourlife.streamlit.app/Brain_tumor_predict"', unsafe_allow_html=True)
 if selected == "Asistente":
     open('pages/Asistente.py')
 if selected == "About me":
