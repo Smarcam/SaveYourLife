@@ -2,10 +2,11 @@ import streamlit as st
 from googlesearch import search as google_search
 
 
-def on_enter_pressed(term, num_results=10):
+
+def on_enter_pressed(term):
     if term:
         try:
-            results = list(google_search(term, num_results=num_results))
+            results = list(google_search(term))
             if results:
                 url = f"https://www.google.com/search?q={'+'.join(term.split())}"
                 st.markdown(f"[Resultados de la búsqueda]({url})")
