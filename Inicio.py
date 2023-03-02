@@ -9,7 +9,8 @@ from functions import *
 
 #PageConfig
 page_config = importar_config()
-
+#Menu
+add_page_title()
 show_pages(
     [
         Page("Inicio.py", "Inicio", ":books:"),
