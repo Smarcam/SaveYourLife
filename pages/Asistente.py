@@ -1,9 +1,8 @@
 import streamlit as st 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from nltk.chat.util import Chat, reflections
 from PIL import Image
 from functions import *
+import src.search as srch
 
 st.set_page_config(
 	page_title = 'SaveYourLife Tumor Brain Predict!',
@@ -13,17 +12,6 @@ st.set_page_config(
 	)
 st.sidebar.title("Main Menu")
 
-def google_search(term):
-    if term:
-        global browser
-        browser = webdriver.Chrome()
-        browser.get(f"https://www.google.com/search?q={term}")
-
-        # Espera hasta que se cargue la página de resultados
-        browser.implicitly_wait(5)
-
-    else:
-        st.warning("Por favor, ingrese un término de búsqueda.")
 pairs = [
     ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
     ['hola', ['Hola Soy medical robot. ¿Que quiere?']],
@@ -46,7 +34,7 @@ def main():
     respo = chat.respond(ref)
     if "abrir" in ref:
         search_term = ref.split("abrir")[1]
-        google_search(search_term)
+        srch.on_enter_pressed(search_term)
     st.write(respo)
 
 if __name__ == "__main__":
