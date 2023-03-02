@@ -3,7 +3,10 @@ from nltk.chat.util import Chat, reflections
 from PIL import Image
 from functions import *
 import src.search as srch
+from functions import *
 
+#PageConfig
+page_config = importar_config()
 
 pairs = [
     ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
