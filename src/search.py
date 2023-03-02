@@ -1,6 +1,8 @@
 import atexit
 import streamlit as st
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 # Función de limpieza que se ejecuta al finalizar el script
 @atexit.register
@@ -13,6 +15,7 @@ def clean_up():
 def google_search(term):
     if term:
         global browser
+        browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         browser = webdriver.Chrome()
         browser.get(f"https://www.google.com/search?q={term}")
 
