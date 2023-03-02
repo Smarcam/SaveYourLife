@@ -12,7 +12,7 @@ page_config = importar_config()
 #Menu
 show_pages(
     [
-        Page("Inicio.py", "Inicio", image),
+        Page("Inicio.py", "Inicio", ":image:"),
         Page("pages/Brain_tumor_predict.py", "Tumor Brain Predict", ":books:"),
 	Page("pages/About_me.py", "Sobre Nosotros", ":books:"),
 	Page("pages/Asistente.py", "Asistente", ":books:"),
