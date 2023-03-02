@@ -20,7 +20,7 @@ add_page_title() # By default this also adds indentation
 # should be
 show_pages(
     [
-        Page("Inicio.py", "Inicio, "🏠"),
+        Page("Inicio.py", "Inicio),
         Page("pages/Brain_tumor_predict.py", "Tumor Brain Predict", ":books:"),
 	Page("pages/About_me.py", "Sobre Nosotros", ":books:"),
 	Page("pages/Asistente.py", "Asistente", ":books:"),     Asistente
