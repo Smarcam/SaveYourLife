@@ -24,15 +24,12 @@ col1, col2 = st.columns([3, 20])
 
 image = Image.open('img/logo.png')
 
-st.header("Buscador")
-term = st.text_input("Introduzca su búsqueda:")
-if term:
-srch.on_enter_pressed(term)
+with st.container():
+    st.header("Buscador")
+    term = st.text_input("Introduzca su búsqueda:")
+    if term:
+        srch.on_enter_pressed(term)
 
-st.header("Buscador")
-term = st.text_input("Introduzca su búsqueda:")
-if term:
-   srch.on_enter_pressed(term) # Busca cuando se presiona Enter en el cuadro de texto
 
 col1, col2 = st.columns([20, 8])
 with col1:
