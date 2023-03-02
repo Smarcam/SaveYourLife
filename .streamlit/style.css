@@ -3,7 +3,7 @@ header {visibility: hidden;}
 footer {visibility: hidden;}
 .css-lyhoi4.e16nr0p32 {visibility: hidden;}
 .viewerBadge_link__1S137 {visibility: hidden;}
-[data-testid="stImage"]{width: 130px;}
+#[data-testid="stImage"]{width: 130px;}
 img{border-radius: 15px 41px;height: 475px;width: 780px;}
 p {margin: 0px 0px 1rem;padding: 0px;font-size: 20px;font-weight: 400;text-shadow: 1px 1px 1px #f000, 2px 2px 1px #00028430;}
 h2 {color : rgb(0, 0, 0);text-shadow: 1px 1px 1px #0000002e, 2px 2px 1px #00b7ff4f;}
