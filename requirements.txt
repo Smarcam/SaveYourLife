@@ -1,7 +1,6 @@
 pandas
 scikit-learn
 streamlit
-streamlit_option_menu
 st_pages
 numpy
 snscrape
