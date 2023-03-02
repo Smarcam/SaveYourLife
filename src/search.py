@@ -19,7 +19,7 @@ def on_enter_pressed(term):
         if results:
             # Abre la búsqueda en una nueva pestaña del navegador
             url = f"https://www.google.com/search?q={'+'.join(term.split())}"
-            webbrowser.open_new_tab(url)
+            st.markdown(f"[Resultados de la búsqueda]({url})")
             st.stop()
 
         else:
