@@ -1,1 +1,19 @@
-fh
+[[pages]]
+path = "Inicio.py"
+name = "Home"
+icon = "🏠"
+
+[[pages]]
+path = "pages/About_me.py"
+name = "About me"
+icon = ":books:"
+
+[[pages]]
+path = "pages/Asistente.py"
+name = "Asistente"
+icon = "🎈️"
+
+[[pages]]
+path = "pages/Brain_tumor_predict.py"
+name = "Brain Tumor"
+icon = "🎈️"
