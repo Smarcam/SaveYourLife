@@ -23,3 +23,4 @@ def on_enter_pressed(term):
             st.stop()
         else:
             st.warning("No se encontraron resultados para su búsqueda.")
+
