@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 from PIL import Image
 import src.search as srch
 import src.load_event as le
-from st_pages import Page, Section, show_pages, add_page_title
+from st_pages import show_pages_from_config
 from functions import *
 
 #PageConfig
