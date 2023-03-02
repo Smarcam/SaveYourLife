@@ -13,22 +13,21 @@ st.set_page_config(
 	initial_sidebar_state = 'collapsed',
 	)
 
-with st.sidebar:
-            selected = option_menu(
-                menu_title="Menu",  # required
-                options=["Inicio", "Brain tumor predict", "Asistente", "About me"],  # required
-                icons=["file-earmark-medical", "bezier2", "chat", "envelope"],  # optional
-                menu_icon="bandaid",  # optional file-earmark-medical 
-                default_index=0,  # optional
-            )
-if selected == "Inicio":
-     open("Inicio.py")
-if selected == "Brain tumor predict":
-    st.markdown('href="https://saveyourlife.streamlit.app/Brain_tumor_predict"', unsafe_allow_html=True)
-if selected == "Asistente":
-    open('pages/Asistente.py')
-if selected == "About me":
-    open('pages/About_me.py')
+add_page_title() # By default this also adds indentation
+
+# Specify what pages should be shown in the sidebar, and what their titles and icons
+# should be
+show_pages(
+    [
+        Page("Inicio.py", "Inicio, "🏠"),
+        Page("pages/Brain_tumor_predict.py", "Tumor Brain Predict", ":books:"),
+	Page("pages/About_me.py", "Sobre Nosotros", ":books:"),
+	Page("pages/Asistente.py", "Asistente", ":books:"),     Asistente
+        Section("My section", icon="🎈️"),
+        # Pages after a section will be indented
+        Page("Another page", icon="💪"),
+    ]
+)
 
 title_container = st.container()
 col1, col2 = st.columns([3, 20])
