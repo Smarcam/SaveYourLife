@@ -5,6 +5,7 @@ import src.search as srch
 import src.load_event as le
 from st_pages import show_pages_from_config
 from functions import *
+image = Image.open('img/logo.png')
 
 #PageConfig
 page_config = importar_config()
