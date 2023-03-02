@@ -54,33 +54,37 @@ with col1:
    st.image('img/inicio_2.jpeg')
 
 with col2:
-   st.markdown('### La detección de tumores mediante MRI y redes neuronales')
+   st.markdown("""
+      ### La detección de tumores mediante MRI y redes neuronales
 
-   st.markdown('La detección de tumores mediante imágenes de resonancia magnética (MRI) y redes neuronales es un proceso complejo que involucra varias etapas.')
+      La detección de tumores mediante imágenes de resonancia magnética (MRI) y redes neuronales es un proceso complejo que involucra varias etapas.
 
-   st.markdown('Aquí te describo en términos generales cómo funciona este proceso: Adquisición de imágenes:')
+      Aquí te describo en términos generales cómo funciona este proceso: Adquisición de imágenes:
 
-   st.markdown('El primer paso en la detección de tumores mediante MRI es adquirir imágenes de resonancia magnética de alta calidad. Las imágenes se adquieren \
-      en múltiples planos y con diferentes secuencias, lo que permite obtener una vista completa y detallada del área afectada.')
+      El primer paso en la detección de tumores mediante MRI es adquirir imágenes de resonancia magnética de alta calidad. Las imágenes se adquieren 
+      en múltiples planos y con diferentes secuencias, lo que permite obtener una vista completa y detallada del área afectada.
 
-   st.markdown('Preprocesamiento de imágenes: Una vez que se adquieren las imágenes de resonancia magnética, se deben preprocesar para mejorar la calidad de la \
-      imagen y reducir el ruido. Esto se logra mediante técnicas de filtrado y normalización.')
-   st.markdown('Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza \
-      mediante la aplicación de técnicas de segmentación de imágenes, que pueden ser manuales o automáticas.')
+      Preprocesamiento de imágenes: Una vez que se adquieren las imágenes de resonancia magnética, se deben preprocesar para mejorar la calidad de la 
+      imagen y reducir el ruido. Esto se logra mediante técnicas de filtrado y normalización.
 
-st.markdown('Extracción de características: Una vez que se identifica el área donde se encuentra el tumor, se extraen características de la imagen que son relevantes \
-   para la detección de tumores. Las características pueden incluir la forma, el tamaño, la textura y la intensidad de los píxeles en la región del tumor.')
+      Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza 
+      mediante la aplicación de técnicas de segmentación de imágenes, que pueden ser manuales o automáticas.
 
-st.markdown('Entrenamiento de la red neuronal: Las características extraídas se utilizan para entrenar una red neuronal para que pueda clasificar las imágenes como \
-   positivas o negativas para tumores. Durante el entrenamiento, la red neuronal ajusta los pesos de las conexiones entre las neuronas para mejorar su precisión en la clasificación de imágenes.')
+      Extracción de características: Una vez que se identifica el área donde se encuentra el tumor, se extraen características de la imagen que son relevantes 
+      para la detección de tumores. Las características pueden incluir la forma, el tamaño, la textura y la intensidad de los píxeles en la región del tumor.
 
-st.markdown('Validación y evaluación del modelo: Una vez que la red neuronal está entrenada, se utiliza para validar y evaluar el modelo. Esto se hace comparando la \
-   salida de la red neuronal con los resultados reales de un conjunto de datos de prueba. Se utilizan métricas de evaluación como la sensibilidad, especificidad y \
-   precisión para determinar la precisión del modelo en la detección de tumores.')
+      Entrenamiento de la red neuronal: Las características extraídas se utilizan para entrenar una red neuronal para que pueda clasificar las imágenes como 
+      positivas o negativas para tumores. Durante el entrenamiento, la red neuronal ajusta los pesos de las conexiones entre las neuronas para mejorar su precisión 
+      en la clasificación de imágenes.
 
-st.markdown('En resumen, la detección de tumores mediante imágenes de resonancia magnética y redes neuronales es un proceso complejo que involucra la adquisición de \
-   imágenes, el preprocesamiento de imágenes, la segmentación de imágenes, la extracción de características, el entrenamiento de la red neuronal y la validación y \
-   evaluación del modelo. A través de esta metodología, se pueden obtener resultados precisos y eficientes para la detección temprana de tumores.')
+      Validación y evaluación del modelo: Una vez que la red neuronal está entrenada, se utiliza para validar y evaluar el modelo. Esto se hace comparando la 
+      salida de la red neuronal con los resultados reales de un conjunto de datos de prueba. Se utilizan métricas de evaluación como la sensibilidad, especificidad y 
+      precisión para determinar la precisión del modelo en la detección de tumores.
+
+      En resumen, la detección de tumores mediante imágenes de resonancia magnética y redes neuronales es un proceso complejo que involucra la adquisición de \
+      imágenes, el preprocesamiento de imágenes, la segmentación de imágenes, la extracción de características, el entrenamiento de la red neuronal y la validación y \
+      evaluación del modelo. A través de esta metodología, se pueden obtener resultados precisos y eficientes para la detección temprana de tumores.
+      """)
 
 col1, col2 = st.columns([20, 10])
 with col1:
