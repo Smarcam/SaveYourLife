@@ -1,7 +1,7 @@
 [[pages]]
 path = "Inicio.py"
 name = "Inicio"
-icon = "img/logo.png"
+icon = "🟦🔵"
 
 [[pages]]
 path = "pages/Asistente.py"
