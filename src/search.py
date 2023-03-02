@@ -1,8 +1,6 @@
 import streamlit as st
 from googlesearch import search as google_search
 
-
-
 def on_enter_pressed(term):
     if term:
         try:
@@ -14,4 +12,3 @@ def on_enter_pressed(term):
                 st.warning("No se encontraron resultados para su búsqueda.")
         except StopIteration:
             st.warning("No se encontraron resultados para su búsqueda o se alcanzó el límite máximo de solicitudes.")
-
