@@ -6,8 +6,9 @@ import src.load_event as le
 from st_pages import Page, Section, show_pages, add_page_title
 from functions import *
 
+#PageConfig
+page_config = importar_config()
 #Menu
-add_page_title()
 show_pages(
     [
         Page("Inicio.py", "Inicio", ":books:"),
