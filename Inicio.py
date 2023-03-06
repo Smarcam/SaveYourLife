@@ -16,9 +16,8 @@ col1, col2 = st.columns([3, 20])
 with title_container:
    with col1:
       le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
-      st.markdown('<h1 style="color: #28cffe;">SaveYourLife</h1>',unsafe_allow_html=True)
    with col2:
-      st.markdown('<h1 style="color: #28cffe;">.</h1>',unsafe_allow_html=True)
+       st.markdown('<h1 style="color: #28cffe;">SaveYourLife</h1>',unsafe_allow_html=True)
 
 with st.container():
     st.header("Buscador")
