@@ -4,6 +4,8 @@
 
 ## Trabajo Fin de Máster FP en IA y Big Data, CPIFP Malaga Tech Park
 
+https://saveyourlife.streamlit.app/
+
 Trabajo realizado por Samuel Martínez Camacho y Miguel Angel Ortega Durán
 ## ↘️ Justificación y descripción del proyecto.
 Hemos decidido hacer un proyecto en el que se pudieramos obtener el precio de las viviendas en Málaga (u otro destino si no es posible) de una forma rápida. Pensamos que puede ser útil para quiénes buscan un lugar para vivir aquí en Málaga. De esta manera, el cliente podrá ver qué presupuesto necesitará para comprar o vender según el tipo de vivienda que esté buscando o vendiendo. Usamos datos reales para que el cliente tenga una estimación más acertada del precio.
