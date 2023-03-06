@@ -15,7 +15,7 @@ col1, col2 = st.columns([3, 20])
 
 with title_container:
    with col1:
-      image = Image.open('img/logo.png', width=130)
+      image = Image.open('img/logo.png')
       le.image_clickable(image, "https://saveyourlife.streamlit.app")
       #st.image(image, width=130)
    with col2:
