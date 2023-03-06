@@ -9,6 +9,4 @@ p {margin: 0px 0px 1rem;padding: 0px;font-size: 20px;font-weight: 400;text-shado
 h2 {color : rgb(0, 0, 0);text-shadow: 1px 1px 1px #0000002e, 2px 2px 1px #00b7ff4f;}
 .css-k1ih3n{padding-top: 20px;}
 #.css-10trblm{padding-top: calc(1rem);}
-  @media (min-width: 1200px)
-h1 {
-  font-size: 4.75rem;
+@media (min-width: 1200px) h1 {font-size: 4.75rem;}
