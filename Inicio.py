@@ -10,14 +10,9 @@ page_config = importar_config()
 #Menu
 show_pages_from_config()
 
-title_container = st.container()
-col1, col2 = st.columns([3, 20])
-
 with title_container:
-   with col1:
-      le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
-   with col2:
-       st.markdown('<h1 style="color: #28cffe;">SaveYourLife</h1>',unsafe_allow_html=True)
+    le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
+
 
 with st.container():
     st.header("Buscador")
