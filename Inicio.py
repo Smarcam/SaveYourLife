@@ -15,7 +15,7 @@ with st.container():
   
 with st.container():
     st.header("Buscador")
-    term = st.text_input("",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
+    term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
     if term:
         srch.on_enter_pressed(term)
 
