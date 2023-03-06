@@ -11,7 +11,7 @@ page_config = importar_config()
 show_pages_from_config()
 
 with st.container():
-   le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
+   le.logo_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
   
 with st.container():
     st.header("Buscador")
