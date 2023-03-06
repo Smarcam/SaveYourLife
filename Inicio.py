@@ -10,9 +10,9 @@ page_config = importar_config()
 #Menu
 show_pages_from_config()
 
-with title_container:
+with st.container():
    le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
-
+  
 with st.container():
     st.header("Buscador")
     term = st.text_input("Introduzca su búsqueda:")
