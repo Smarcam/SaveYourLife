@@ -16,7 +16,7 @@ col1, col2 = st.columns([3, 20])
 with title_container:
    with col1:
       image = Image.open('img/logo.png')
-      le.image_clickable(image, "https://saveyourlife.streamlit.app")
+      le.image_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
       #st.image(image, width=130)
    with col2:
       st.markdown('<h1 style="color: #28cffe;">SaveYourLife</h1>',unsafe_allow_html=True)
