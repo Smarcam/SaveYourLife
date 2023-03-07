@@ -14,7 +14,7 @@ show_pages_from_config()
 # specify the primary menu definition
 menu_data = [
     {'icon':"🩻",'label':" "},
-    {'icon': "fa-solid fa-radar",'label':"Modelos", 'submenu':[{'label':"Brain", 'icon': "fa fa-meh"},{'label':"Breast"}]},
+    {'icon': "fa-solid fa-radar",'label':"Modelos", 'submenu':[{'label':"Brain", 'icon': "🧠"},{'label':"Breast"}]},
     {'id':'Copy','icon':"🐙",'label':"Asistente"},
     {'icon': "far fa-copy", 'label':"Sobre Nosotros"},
     ]
