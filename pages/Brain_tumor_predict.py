@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import time
 import imutils
+import tensorflow-cpu
 from tensorflow import keras
 from tensorflow.keras.optimizers import Adam
 from functions import *
