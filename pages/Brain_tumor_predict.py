@@ -3,10 +3,21 @@ import cv2
 import numpy as np
 import time
 import imutils
-import tensorflow
-from tensorflow import keras
-from tensorflow.keras.optimizers import Adam
+import tensorflow as tf
+import tensorflow_hub as hub
+import keras
+from keras.optimizers import Adam
 from functions import *
+# from tensorflow.keras import preprocessing
+from keras import preprocessing
+from keras.models import Sequential
+from keras.layers import Dense, Conv2D , MaxPool2D , Flatten , Dropout,Embedding,LSTM,GRU
+from keras.preprocessing.image import ImageDataGenerator
+# from keras.layers.embeddings import Embedding
+from keras.preprocessing.image import ImageDataGenerator
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Activation, Dropout, Flatten, Dense
 
 #PageConfig
 page_config = importar_config()
