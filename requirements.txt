@@ -6,7 +6,7 @@ numpy
 snscrape
 nltk
 imutils
-tensorflow
+tensorflow==2.5.0
 keras
 tensorflow_hub==0.12.0
 opencv-python-headless
