@@ -9,4 +9,6 @@ imutils
 tensorflow
 opencv-python-headless
 protobuf==3.20
+hydralit_components
+datetime
 googlesearch-python
