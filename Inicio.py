@@ -5,11 +5,44 @@ import src.search as srch
 import src.load_event as le
 from st_pages import show_pages_from_config
 from functions import *
+import hydralit_components as hc
+import datetime
 #PageConfig
 page_config = importar_config()
 #Menu
 show_pages_from_config()
+# specify the primary menu definition
+menu_data = [
+    {'icon': "far fa-copy", 'label':"Left End"},
+    {'id':'Copy','icon':"🐙",'label':"Copy"},
+    {'icon': "fa-solid fa-radar",'label':"Dropdown1", 'submenu':[{'id':' subid11','icon': "fa fa-paperclip", 'label':"Sub-item 1"},{'id':'subid12','icon': "💀", 'label':"Sub-item 2"},{'id':'subid13','icon': "fa fa-database", 'label':"Sub-item 3"}]},
+    {'icon': "far fa-chart-bar", 'label':"Chart"},#no tooltip message
+    {'id':' Crazy return value 💀','icon': "💀", 'label':"Calendar"},
+    {'icon': "fas fa-tachometer-alt", 'label':"Dashboard",'ttip':"I'm the Dashboard tooltip!"}, #can add a tooltip message
+    {'icon': "far fa-copy", 'label':"Right End"},
+    {'icon': "fa-solid fa-radar",'label':"Dropdown2", 'submenu':[{'label':"Sub-item 1", 'icon': "fa fa-meh"},{'label':"Sub-item 2"},{'icon':'🙉','label':"Sub-item 3",}]},
+]
 
+over_theme = {'txc_inactive': '#FFFFFF'}
+menu_id = hc.nav_bar(
+    menu_definition=menu_data,
+    override_theme=over_theme,
+    home_name='Home',
+    login_name='Logout',
+    hide_streamlit_markers=False, #will show the st hamburger as well as the navbar now!
+    sticky_nav=True, #at the top or not
+    sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
+)
+
+if st.button('click me'):
+  st.info('You clicked at: {}'.format(datetime.datetime.now()))
+
+
+if st.sidebar.button('click me too'):
+  st.info('You clicked at: {}'.format(datetime.datetime.now()))
+
+#get the id of the menu item clicked
+st.info(f"{menu_id}")
 with st.container():
    le.logo_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
   
@@ -112,5 +145,21 @@ with col2:
 
 with col3:
    components.html('<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',height=420,width=350)
+   img_file_buffer = st.camera_input("Take a picture")
+
+   if img_file_buffer is not None:
+       # To read image file buffer as a PIL Image:
+       img = Image.open(img_file_buffer)
+
+       # To convert PIL Image to numpy array:
+       img_array = np.array(img)
+
+       # Check the type of img_array:
+       # Should output: <class 'numpy.ndarray'>
+       st.write(type(img_array))
+
+       # Check the shape of img_array:
+       # Should output shape: (height, width, channels)
+       st.write(img_array.shape)
 #CCS
 css = importar_css()
