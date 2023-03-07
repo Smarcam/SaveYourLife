@@ -13,8 +13,7 @@ page_config = importar_config()
 show_pages_from_config()
 # specify the primary menu definition
 menu_data = [
-    
-    {'id':'Copy','icon':"img/logo.png",'label':"Asistente"},
+    {'icon':"🐙",'label':" "},
     {'icon': "fa-solid fa-radar",'label':"Modelos", 'submenu':[{'label':"Brain", 'icon': "fa fa-meh"},{'label':"Breast"}]},
     {'id':'Copy','icon':"🐙",'label':"Asistente"},
     {'icon': "far fa-copy", 'label':"Sobre Nosotros"},
@@ -23,6 +22,8 @@ over_theme = {'txc_inactive': '#FFFFFF'}
 menu_id = hc.nav_bar(
     menu_definition=menu_data,
     override_theme=over_theme,
+    image = Image.open('img/logo.png')
+    st.image(image, width= use_column_width=True)
     hide_streamlit_markers=False, #will show the st hamburger as well as the navbar now!
     sticky_nav=True, #at the top or not
     sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
