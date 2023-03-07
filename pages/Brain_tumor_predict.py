@@ -4,7 +4,7 @@ import numpy as np
 import time
 import imutils
 from tensorflow import keras
-from tensorflow.keras.optimizers import RMSprop
+from tensorflow.keras.optimizers import Adam
 from functions import *
 
 #PageConfig
@@ -58,7 +58,7 @@ else:
             time.sleep(1)
             keras_model = keras.models.load_model('model/Brain_model_2.4.h5')
 
-            keras_model.compile(optimizer=RMSprop(learning_rate=1e-4),
+            keras_model.compile(optimizer=Adam(learning_rate=1e-4),
                             loss='categorical_crossentropy',
                             metrics=['acc'])
 
