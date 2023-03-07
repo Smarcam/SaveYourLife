@@ -12,3 +12,4 @@ protobuf==3.20
 hydralit_components
 datetime
 googlesearch-python
+libcudart.so.11.0
