@@ -7,7 +7,7 @@ snscrape
 nltk
 imutils
 tensorflow
-tensorflow-gpu==2.5.0
+keras
 tensorflow_hub==0.12.0
 opencv-python-headless
 protobuf==3.20
