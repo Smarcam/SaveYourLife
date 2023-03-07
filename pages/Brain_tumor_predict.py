@@ -59,7 +59,7 @@ else:
             keras_model = keras.models.load_model('model/Brain_model_2.4.h5')
 
             keras_model.compile(optimizer=RMSprop(learning_rate=1e-4),
-                            loss='sparse_categorical_crossentropy',
+                            loss='categorical_crossentropy',
                             metrics=['acc'])
 
         # Agrega un botón para realizar la predicción, solo este visible cuando se cargue la imagen 
