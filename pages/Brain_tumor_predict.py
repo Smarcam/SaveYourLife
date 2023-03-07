@@ -56,7 +56,7 @@ else:
         # Carga el modelo previamente entrenado
         with st.spinner('Cargando modelo...'):
             time.sleep(1)
-            keras_model = keras.models.load_model('model/Brain_model.h5')
+            keras_model = keras.models.load_model('model/Brain_model_2.4.h5')
 
             keras_model.compile(optimizer=RMSprop(learning_rate=1e-4),
                             loss='sparse_categorical_crossentropy',
@@ -91,7 +91,10 @@ else:
                     st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
                 elif prediction == 1:  
                     st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
-
+                elif prediction == 2:  
+                    st.write("La imagen corresponde a un cerebro sano")
+                elif prediction == 3:  
+                    st.write("La imagen corresponde a un cerebro con tumor tipo pituitario")
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
 #CCS
