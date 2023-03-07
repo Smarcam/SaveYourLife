@@ -4,7 +4,6 @@ import numpy as np
 import time
 import imutils
 import tensorflow as tf
-import tensorflow_hub as hub
 import keras
 from keras.optimizers import Adam
 from functions import *
