@@ -72,7 +72,7 @@ else:
         # Carga el modelo previamente entrenado
         with st.spinner('Cargando modelo...'):
             time.sleep(1)
-            keras_model = keras.models.load_model('model/Brain_model_2.4.h5')
+            keras_model = keras.models.load_model('model/brainmodel.h5')
 
         # Agrega un botón para realizar la predicción, solo este visible cuando se cargue la imagen 
         button_clicked = st.button("Realizar predicción")
