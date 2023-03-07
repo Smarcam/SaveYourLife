@@ -23,7 +23,7 @@ menu_id = hc.nav_bar(
     menu_definition=menu_data,
     override_theme=over_theme,
     image = Image.open('img/logo.png')
-    st.image(image, width= use_column_width=True)
+        st.image(image, width= use_column_width=True)
     hide_streamlit_markers=False, #will show the st hamburger as well as the navbar now!
     sticky_nav=True, #at the top or not
     sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
