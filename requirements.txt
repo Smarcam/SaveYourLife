@@ -2,7 +2,6 @@ pandas
 scikit-learn
 streamlit
 st_pages
-cuda
 numpy
 snscrape
 nltk
