@@ -13,8 +13,7 @@ page_config = importar_config()
 show_pages_from_config()
 # specify the primary menu definition
 menu_data = [
-    {'icon': "far fa-copy", 'label':"Left End"},
-    {'icon': "fa-solid fa-radar",'label':"Dropdown2", 'submenu':[{'label':"Sub-item 1", 'icon': "fa fa-meh"},{'label':"Sub-item 2"},{'icon':'🙉','label':"Sub-item 3",}]},
+    {'icon': "fa-solid fa-radar",'label':"Modelos", 'submenu':[{'label':"Brain", 'icon': "fa fa-meh"},{'label':"Breast"},{'icon':'🙉','label':"Sub-item 3",}]},
     {'id':'Copy','icon':"🐙",'label':"Asistente"},
     {'icon': "far fa-copy", 'label':"Sobre Nosotros"},
     ]
