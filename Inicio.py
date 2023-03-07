@@ -13,7 +13,7 @@ page_config = importar_config()
 show_pages_from_config()
 # specify the primary menu definition
 menu_data = [
-    {'icon':"🐙",'label':" "},
+    {'icon':"https://icons8.com/icon/WXgDgrxcNiCJ/s",'label':" "},
     {'icon': "fa-solid fa-radar",'label':"Modelos", 'submenu':[{'label':"Brain", 'icon': "fa fa-meh"},{'label':"Breast"}]},
     {'id':'Copy','icon':"🐙",'label':"Asistente"},
     {'icon': "far fa-copy", 'label':"Sobre Nosotros"},
@@ -26,6 +26,7 @@ menu_id = hc.nav_bar(
     sticky_nav=True, #at the top or not
     sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
 )
+
 with st.container():
    le.logo_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
   
