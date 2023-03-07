@@ -43,10 +43,10 @@ def process_image(image):
     # Devuelve la clase con la mayor probabilidad
     return np.argmax(prediction)
 
-# Carga la imagen con Streamlit y muestra la predicción
-uploaded_file = st.file_uploader("Cargar imagen", type=["jpg", "jpeg", "png"])
 if st.button("📷"):
     img_file_buffer = st.camera_input("Take a picture")
+# Carga la imagen con Streamlit y muestra la predicción
+uploaded_file = st.file_uploader("Cargar imagen", type=["jpg", "jpeg", "png"])
 if not uploaded_file:
     st.warning("Por favor, carga una imagen para continuar.")
 else:
