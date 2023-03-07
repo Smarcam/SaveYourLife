@@ -104,9 +104,13 @@ else:
                 # Realiza la predicción y muestra el resultado en la interfaz
                 prediction = process_image(image)
                 if prediction == 0:
-                    st.write("La imagen corresponde a un cerebro con tumor")
+                    st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
                 elif prediction == 1:  
+                    st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
+                elif prediction == 2:  
                     st.write("La imagen corresponde a un cerebro sano")
+                elif prediction == 3:  
+                    st.write("La imagen corresponde a un cerebro con tumor tipo pituitario")
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
 #CCS
