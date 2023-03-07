@@ -107,10 +107,7 @@ else:
                     st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
                 elif prediction == 1:  
                     st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
-                elif prediction == 2:  
-                    st.write("La imagen corresponde a un cerebro sano")
-                elif prediction == 3:  
-                    st.write("La imagen corresponde a un cerebro con tumor tipo pituitario")
+
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
 #CCS
