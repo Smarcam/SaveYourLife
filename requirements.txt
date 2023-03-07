@@ -12,4 +12,3 @@ protobuf==3.20
 hydralit_components
 datetime
 googlesearch-python
-tensorflow-gpu
