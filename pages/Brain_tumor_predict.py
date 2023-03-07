@@ -47,9 +47,6 @@ def process_image(image):
 uploaded_file = st.file_uploader("Cargar imagen", type=["jpg", "jpeg", "png"])
 if st.button("📷"):
     img_file_buffer = st.camera_input("Take a picture")
-    if img_file_buffer is not None:
-        input_img = Image.open(img_file_buffer)
-        final_sketch = process_image(np.array(input_img))
 if not uploaded_file:
     st.warning("Por favor, carga una imagen para continuar.")
 else:
