@@ -17,7 +17,7 @@ def menu():
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
    <a class="navbar-brand" href="#">
-       <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+       <img src="https://github.com/Smarcam/SaveYourLife/blob/288ecb820505cba3d79953b832844448e2c5fd29/img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Bootstrap
    </a>
     <a class="navbar-brand" href="#">Navbar scroll</a>
