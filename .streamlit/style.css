@@ -9,8 +9,7 @@ p {margin: 0px 0px 1rem;padding: 0px;font-size: 20px;font-weight: 400;text-shado
 h2 {color : rgb(0, 0, 0);text-shadow: 1px 1px 1px #0000002e, 2px 2px 1px #00b7ff4f;}
 .css-k1ih3n{padding-top: 20px;}
 iframe {z-idex: 0 !important;}
-.div[data-stale="false"]{z-idex: 0 !important; margin-left: -80px;}
-.element-container.css-1nnpbs.e1tzin5v3 {z-idex: 0 !important; margin-left: -80px;}
-.iframe[title="hydralit_components.NavBar.nav_bar"] {z-idex: 0 !important; margin-left: -80px;}
+.div[data-stale="false"] > iframe[title="hydralit_components.NavBar.nav_bar"] {z-idex: 0 !important; margin-left: -80px;}
+#.element-container.css-1nnpbs.e1tzin5v3 {z-idex: 0 !important; margin-left: -80px;}
 #css-1sslkv8.e16nr0p34
 #.css-10trblm{padding-top: calc(1rem);}
