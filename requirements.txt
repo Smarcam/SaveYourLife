@@ -13,3 +13,7 @@ protobuf==3.20
 hydralit_components
 datetime
 googlesearch-python
+pickle
+json
+warnings
+random
