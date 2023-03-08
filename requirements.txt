@@ -13,4 +13,4 @@ protobuf==3.20
 hydralit_components
 datetime
 googlesearch-python
-pickle4
+joblib==1.0.1
