@@ -16,7 +16,7 @@ nltk.download("popular")
 # Cargar el archivo intents.json
 words = pickle.load(open("model/words.pkl", "rb"))
 classes = pickle.load(open("model/classes.pkl", "rb"))
-model = load_model("model/chatbot_model.h5")
+model = load_model("model/chatbot_model.h5", compile=False)
 data_file = open('Json/intents.json', encoding='utf-8').read() # lee el fichero de json
 intents = json.loads(data_file) # carga el fichero de json
 
