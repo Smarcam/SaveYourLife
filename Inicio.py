@@ -14,9 +14,9 @@ show_pages_from_config()
 
 ruta_imagen = "img/logo.png"
 enlace = "https://saveyourlife.streamlit.app"
+st.markdown(f'<a href="{enlace}"><img src="{ruta_imagen}"></a>', unsafe_allow_html=True)
 def menu():
   return """
-st.markdown(f'<a href="{enlace}"><img src="{ruta_imagen}"></a>'
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="{enlace}">
     <img src="{ruta_imagen}">
