@@ -49,12 +49,11 @@ with col1:
 
       Los visitantes también pueden acceder a un blog de twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación 
       de tumores y la inteligencia artificial.
-
-      La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
-      el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
-      para garantizar la protección de la información del usuario y la privacidad de los datos.
       """)
-      
+        
+      st.markdown("""La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
+      el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
+      para garantizar la protección de la información del usuario y la privacidad de los datos.""")
 with col2:
    st.image('img/inicio.jpeg')
 
@@ -74,9 +73,9 @@ with col2:
       en múltiples planos y con diferentes secuencias, lo que permite obtener una vista completa y detallada del área afectada.
 
       Preprocesamiento de imágenes: Una vez que se adquieren las imágenes de resonancia magnética, se deben preprocesar para mejorar la calidad de la 
-      imagen y reducir el ruido. Esto se logra mediante técnicas de filtrado y normalización.
+      imagen y reducir el ruido. Esto se logra mediante técnicas de filtrado y normalización.""")
 
-      Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza 
+      st.markdown("""Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza 
       mediante la aplicación de técnicas de segmentación de imágenes, que pueden ser manuales o automáticas.
 
       Extracción de características: Una vez que se identifica el área donde se encuentra el tumor, se extraen características de la imagen que son relevantes 
