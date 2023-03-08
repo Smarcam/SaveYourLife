@@ -14,45 +14,89 @@ show_pages_from_config()
 
 def menu():
   return """
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-   <a class="navbar-brand" href="#">
-       <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"/>
-   </a>
-    <a class="navbar-brand" href="#">Navbar scroll</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Link
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<header>
+
+    <div class="container-fluid">
+
+        <div class="navb-logo">
+            <img src="/img/logo.png" alt="Logo">
+        </div>
+
+        <div class="navb-items d-none d-xl-flex">
+
+            <div class="item">
+                <a href="/">Home</a>
+            </div>
+
+            <div class="item">
+                <a href="/services">Services</a>
+            </div>
+
+            <div class="item">
+                <a href="/cases">Cases</a>
+            </div>
+
+            <div class="item">
+                <a href="/about">About</a>
+            </div>
+
+            <div class="item-button">
+                <a href="/contact" type="button">Let's talk</a>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="mobile-toggler d-lg-none">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <img src="/img/logo-variant.png" alt="Logo">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-house"></i><a href="/">Home</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-bell-concierge"></i><a href="/services">Services</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-file-lines"></i> <a href="/cases">Cases</a>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-circle-info"></i><a href="/about">About</a>
+                        </div>
+
+                        <a href="/contact" class="navb-button" type="button">Let's talk</a>
+                    </div>
+
+                    <div class="mobile-modal-footer">
+
+                        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-</nav>
+</header>
 """
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
