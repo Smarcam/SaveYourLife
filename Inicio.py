@@ -15,7 +15,9 @@ show_pages_from_config()
 def menu():
   return """
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Mi sitio web</a>
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" alt="Logo de mi sitio web">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
