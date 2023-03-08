@@ -14,6 +14,5 @@ hydralit_components
 datetime
 googlesearch-python
 pickle4
-json
 warnings
 random
