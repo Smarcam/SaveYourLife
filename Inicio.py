@@ -38,22 +38,25 @@ with st.container():
 
 col1, col2 = st.columns([20, 8])
 with col1:
-     st.markdown("""
+    st.markdown("""
       La página web del SaveYourLife de Predicción de Tumores es un sitio dedicado a brindar información y servicios relacionados con la detección temprana 
       y la predicción de tumores mediante el uso de inteligencia artificial. En la página principal, los visitantes pueden encontrar información sobre los 
       trabajos que realizamos, el equipo de investigación, las tecnologías utilizadas y los resultados obtenidos. También se destacan los servicios disponibles, 
       como la detección temprana de cáncer mediante la evaluación de imágenes médicas y la predicción del riesgo de desarrollar ciertos tipos de tumores. 
-      
+
       Además, la página web ofrece acceso a herramientas y recursos para pacientes y profesionales de la salud, como la carga de imagenes para la evaluación médica
       y la visualización de resultados de investigaciones recientes.
 
       Los visitantes también pueden acceder a un blog de twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación 
       de tumores y la inteligencia artificial.
       """)
-        
-      st.markdown("""La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
-      el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
-      para garantizar la protección de la información del usuario y la privacidad de los datos.""")
+
+st.markdown("""
+  La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
+  el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
+  para garantizar la protección de la información del usuario y la privacidad de los datos.
+  """)
+
 with col2:
    st.image('img/inicio.jpeg')
 
@@ -75,24 +78,24 @@ with col2:
       Preprocesamiento de imágenes: Una vez que se adquieren las imágenes de resonancia magnética, se deben preprocesar para mejorar la calidad de la 
       imagen y reducir el ruido. Esto se logra mediante técnicas de filtrado y normalización.""")
 
-      st.markdown("""Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza 
-      mediante la aplicación de técnicas de segmentación de imágenes, que pueden ser manuales o automáticas.
+st.markdown("""Segmentación de imágenes: La siguiente etapa consiste en segmentar la imagen para identificar el área donde se encuentra el tumor. Esto se realiza 
+  mediante la aplicación de técnicas de segmentación de imágenes, que pueden ser manuales o automáticas.
 
-      Extracción de características: Una vez que se identifica el área donde se encuentra el tumor, se extraen características de la imagen que son relevantes 
-      para la detección de tumores. Las características pueden incluir la forma, el tamaño, la textura y la intensidad de los píxeles en la región del tumor.
+  Extracción de características: Una vez que se identifica el área donde se encuentra el tumor, se extraen características de la imagen que son relevantes 
+  para la detección de tumores. Las características pueden incluir la forma, el tamaño, la textura y la intensidad de los píxeles en la región del tumor.
 
-      Entrenamiento de la red neuronal: Las características extraídas se utilizan para entrenar una red neuronal para que pueda clasificar las imágenes como 
-      positivas o negativas para tumores. Durante el entrenamiento, la red neuronal ajusta los pesos de las conexiones entre las neuronas para mejorar su precisión 
-      en la clasificación de imágenes.
+  Entrenamiento de la red neuronal: Las características extraídas se utilizan para entrenar una red neuronal para que pueda clasificar las imágenes como 
+  positivas o negativas para tumores. Durante el entrenamiento, la red neuronal ajusta los pesos de las conexiones entre las neuronas para mejorar su precisión 
+  en la clasificación de imágenes.
 
-      Validación y evaluación del modelo: Una vez que la red neuronal está entrenada, se utiliza para validar y evaluar el modelo. Esto se hace comparando la 
-      salida de la red neuronal con los resultados reales de un conjunto de datos de prueba. Se utilizan métricas de evaluación como la sensibilidad, especificidad y 
-      precisión para determinar la precisión del modelo en la detección de tumores.
+  Validación y evaluación del modelo: Una vez que la red neuronal está entrenada, se utiliza para validar y evaluar el modelo. Esto se hace comparando la 
+  salida de la red neuronal con los resultados reales de un conjunto de datos de prueba. Se utilizan métricas de evaluación como la sensibilidad, especificidad y 
+  precisión para determinar la precisión del modelo en la detección de tumores.
 
-      En resumen, la detección de tumores mediante imágenes de resonancia magnética y redes neuronales es un proceso complejo que involucra la adquisición de \
-      imágenes, el preprocesamiento de imágenes, la segmentación de imágenes, la extracción de características, el entrenamiento de la red neuronal y la validación y \
-      evaluación del modelo. A través de esta metodología, se pueden obtener resultados precisos y eficientes para la detección temprana de tumores.
-      """)
+  En resumen, la detección de tumores mediante imágenes de resonancia magnética y redes neuronales es un proceso complejo que involucra la adquisición de \
+  imágenes, el preprocesamiento de imágenes, la segmentación de imágenes, la extracción de características, el entrenamiento de la red neuronal y la validación y \
+  evaluación del modelo. A través de esta metodología, se pueden obtener resultados precisos y eficientes para la detección temprana de tumores.
+  """)
 
 col1, col2 = st.columns([20, 10])
 with col1:
