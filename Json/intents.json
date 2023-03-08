@@ -1,0 +1,531 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": [
+                "Hola",
+                "Buenos días",
+                "Hola, ¿cómo estás?",
+                "¡Hola!"
+            ],
+            "responses": [
+                "¡Hola! Soy el chatbot de SaveYourLife especializados en la detección de tumores mediante CNN de imágenes de resonancia magnética. ¿En qué puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "informacion",
+            "patterns": [
+                "¿Qué hace la empresa?",
+                "¿En qué se especializa la empresa?",
+                "¿Qué tipo de tumores detectan?",
+                "¿Cómo funciona la detección mediante CNN de imágenes de resonancia magnética?"
+            ],
+            "responses": [
+                "SaveYourLife se especializa en la detección de tumores mediante CNN de imágenes de resonancia magnética. Utilizamos tecnología de última generación para analizar las imágenes y detectar posibles tumores. Detectamos diferentes tipos de tumores, como tumores cerebrales, de mama, de próstata, entre otros. Si deseas más información sobre el funcionamiento de la detección mediante CNN, puedo conectarlo con uno de nuestros especialistas en imagenología médica."
+            ]
+        },
+        {
+            "tag": "servicios",
+            "patterns": [
+                "¿Qué servicios ofrecen?",
+                "¿Cómo puedo programar una cita?",
+                "¿Qué pruebas de detección ofrecen?",
+                "¿Cuánto cuesta una consulta?"
+            ],
+            "responses": [
+                "Ofrecemos diferentes servicios, como pruebas de detección de tumores, diagnóstico y tratamiento. Para programar una cita, puedes llamar a nuestro centro de atención al cliente o visitar nuestra página web. Ofrecemos diferentes pruebas de detección, dependiendo del tipo de tumor que se sospeche. Los costos de las consultas varían según el servicio que se necesite. Si deseas más información, puedo ponerlo en contacto con nuestro equipo de atención al cliente."
+            ]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "¡Genial!",
+                "¡Estoy muy agradecido!"
+            ],
+            "responses": [
+                "¡De nada! Estoy aquí para ayudarte en lo que necesites. Si tienes más preguntas o necesitas más información, no dudes en preguntar."
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Adiós",
+                "Hasta luego",
+                "¡Nos vemos pronto!",
+                "¡Chao!"
+            ],
+            "responses": [
+                "¡Adiós! Espero haber sido de ayuda. No dudes en volver si necesitas algo más. ¡Que tengas un buen día!"
+            ]
+        },
+        {
+            "tag": "deteccion",
+            "patterns": [
+                "¿Cómo se realiza la detección de tumores?",
+                "¿Qué proceso sigue la detección de tumores?",
+                "¿Cómo funciona la detección mediante CNN?",
+                "¿Cuál es el procedimiento para detectar tumores mediante imágenes de resonancia magnética?"
+            ],
+            "responses": [
+                "Para realizar la detección de tumores mediante CNN de imágenes de resonancia magnética, nuestro equipo de especialistas en imagenología médica analiza las imágenes obtenidas por medio de resonancia magnética y las procesa utilizando algoritmos de inteligencia artificial basados en redes neuronales convolucionales. Estas redes neuronales se entrenan con miles de imágenes para detectar patrones y características que permiten identificar posibles tumores. El proceso es muy preciso y eficiente, y nos permite detectar tumores en una etapa temprana, cuando son más tratables. ¿Te gustaría saber más acerca del proceso de detección?"
+            ]
+        },
+        {
+            "tag": "mañana",
+            "patterns": [
+                "Buenos días",
+                "¡Hola!",
+                "¿Cómo estás?"
+            ],
+            "responses": [
+                "¡Buenos días! Espero que hayas dormido bien. ¿Cómo te sientes hoy?"
+            ]
+        },
+        {
+            "tag": "tarde",
+            "patterns": [
+                "Buenas tardes"
+            ],
+            "responses": [
+                "¡Buenas tardes! ¿Cómo va tu día?"
+            ]
+        },
+        {
+            "tag": "noche",
+            "patterns": [
+                "Buenas noches"
+            ],
+            "responses": [
+                "¡Buenas noches! ¿Cómo ha sido tu día?"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Adiós",
+                "Hasta luego",
+                "Chao",
+                "Hasta la vista",
+                "Nos vemos"
+            ],
+            "responses": [
+                "¡Hasta luego!",
+                "Que tengas un buen día.",
+                "¡Adiós! Vuelve pronto."
+            ]
+        },
+        {
+            "tag": "agradecimiento",
+            "patterns": [
+                "Gracias",
+                "Muchas gracias",
+                "Te lo agradezco"
+            ],
+            "responses": [
+                "¡De nada!",
+                "¡Siempre a la orden!",
+                "Es un placer poder ayudar."
+            ]
+        },
+        {
+            "tag": "sin-respuesta",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Soy el Chatbot de SaveYourLife."
+            ]
+        },
+        {
+            "tag": "respuesta-neutral",
+            "patterns": [
+                "Nada en particular",
+                "Nada nuevo"
+            ],
+            "responses": [
+                "Ya veo. ¿Quieres hablar de algo en específico?"
+            ]
+        },
+        {
+            "tag": "acerca",
+            "patterns": [
+                "¿Quién eres?",
+                "¿Qué eres?",
+                "¿Quién eres tú?",
+                "Cuéntame más sobre ti mismo.",
+                "¿Cuál es tu nombre?",
+                "¿Cómo debo llamarte?",
+                "¿Cómo te llamas?",
+                "Háblame sobre ti"
+            ],
+            "responses": [
+                "Soy Moosa, tu Asistente Personal de Inteligencia Artificial Terapéutica. ¿Cómo te sientes hoy?",
+                "Soy Moosa, un asistente de IA terapéutico diseñado para ayudarte. Háblame de ti.",
+                "Soy Moosa. Soy un agente conversacional diseñado para imitar a un terapeuta. Entonces, ¿cómo te sientes hoy?",
+                "Puedes llamarme Moosa.",
+                "¡Soy Moosa!",
+                "Llámame Moosa"
+            ]
+        },
+        {
+            "tag": "habilidad",
+            "patterns": [
+                "¿Qué puedes hacer?"
+            ],
+            "responses": [
+                "Puedo proporcionar información sobre la detección de tumores cerebrales, responder preguntas relacionadas los tipos de tumores que detectamos y mantener conversaciones diarias. No me consideres un sustituto de un profesional de la medicina. Por favor, busca ayuda si no te sientes satisfecho conmigo."
+            ]
+        },
+        {
+            "tag": "creación",
+            "patterns": [
+                "¿Quién te creó?",
+                "¿Cómo fuiste hecho?",
+                "¿Cómo fuiste creado?",
+                "¿Quien es tu creador?"
+            ],
+            "responses": [
+                "Fui creado por Samuel y Miguel Ángel.",
+                "Fui entrenado en un conjunto de datos de texto utilizando técnicas de aprendizaje profundo y procesamiento del lenguaje natural",
+                "La pregunta real es: ¿Quién te creó a ti?"
+            ]
+        },
+        {
+            "tag": "nombre",
+            "patterns": [
+                "Mi nombre es ",
+                "Me llamo ",
+                "Puedes llamarme "
+            ],
+            "responses": [
+                "Oh, encantado de conocerte. ¿Cómo ha sido tu semana?",
+                "Encantado de conocerte. Entonces, ¿cómo te sientes hoy?",
+                "Ese es un gran nombre. Cuéntame más sobre ti."
+            ]
+        },
+        {
+            "tag": "ayuda",
+            "patterns": [
+                "¿Podrías ayudarme?",
+                "Por favor, dame una mano",
+                "¿Puedes ayudarme?",
+                "¿Qué puedes hacer por mí?",
+                "Necesito apoyo",
+                "Necesito ayuda",
+                "Apóyame por favor"
+            ],
+            "responses": [
+                "Por supuesto. Dime cómo puedo ayudarte",
+                "Dime cuál es tu problema para que pueda ayudarte",
+                "Sí, por supuesto. ¿Cómo puedo ayudarte?"
+            ]
+        },
+        {
+            "tag": "triste",
+            "patterns": [
+                "Me siento solo",
+                "Estoy tan solo",
+                "Me siento mal",
+                "Me siento triste",
+                "Estoy triste",
+                "Me siento tan solo",
+                "Me siento vacío",
+                "No tengo a nadie"
+            ],
+            "responses": [
+                "Lo siento mucho. Estoy aquí para ti. Hablar al respecto podría ayudar. Entonces, ¿por qué crees que te sientes así?",
+                "Estoy aquí para ti. ¿Podrías decirme por qué te sientes así?",
+                "¿Por qué crees que te sientes así?",
+                "¿Cuánto tiempo has estado sintiéndote así?"
+            ]
+        },
+        {
+            "tag": "casual",
+            "patterns": [
+                "Oh ya veo.",
+                "ok",
+                "de acuerdo",
+                "bien",
+                "lo que sea",
+                "K",
+                "bien",
+                "sí",
+                "sí",
+                "no",
+                "no realmente"
+            ],
+            "responses": [
+                "Discutamos más a fondo por qué te sientes así.",
+                "¿Cómo te sentiste la semana pasada?",
+                "Estoy escuchando. Por favor, continúa.",
+                "Cuéntame más",
+                "¿Puedes ampliar eso?",
+                "Ven, ven aclarar tus pensamientos."
+            ]
+        },
+        {
+            "tag": "ansioso",
+            "patterns": [
+                "Me siento muy ansioso.",
+                "Estoy muy ansioso por causa de "
+            ],
+            "responses": [
+                "No seas duro contigo mismo. ¿Cuál es la razón detrás de esto?",
+                "¿Puedes contarme más sobre este sentimiento?",
+                "Entiendo que puede ser aterrador. Cuéntame más al respecto.",
+                "No dejes que las pequeñas preocupaciones te depriman. ¿Cuál es lo peor que puede pasar?"
+            ]
+        },
+        {
+            "tag": "no-hablar",
+            "patterns": [
+                "No quiero hablar de eso.",
+                "No te acerques.",
+                "No puedo abrirme.",
+                "Solo cállate"
+            ],
+            "responses": [
+                "Hablar de algo realmente ayuda. Si no estás listo para abrirte, está bien. Solo sé que estoy aquí para ti, siempre que me necesites.",
+                "Quiero ayudarte. De verdad. Pero para que yo pueda ayudarte, tendrás que hablar conmigo.",
+                "Estoy aquí para escucharte y ayudarte a desahogarte. Así que por favor háblame.",
+                "Puedes hablar conmigo sin miedo al juicio."
+            ]
+        },
+        {
+            "tag": "sueño",
+            "patterns": [
+                "Tengo insomnio",
+                "Estoy sufriendo de insomnio",
+                "No puedo dormir.",
+                "No he dormido en los últimos días.",
+                "No puedo conciliar el sueño.",
+                "No he tenido un sueño adecuado en los últimos días."
+            ],
+            "responses": [
+                "¿Qué crees que es la razón detrás de esto?",
+                "Eso parece horrible. ¿Qué crees que hay detrás de esto?"
+            ]
+        },
+        {
+            "tag": "asustado",
+            "patterns": [
+                "Tengo miedo",
+                "Eso suena terrible. ¿Qué hago?",
+                "No, no quiero sentirme así",
+                "Tengo miedo por mí mismo"
+            ],
+            "responses": [
+                "Es natural sentirse así. Estoy aquí para ti.",
+                "Todo estará bien. Este sentimiento es solo momentáneo.",
+                "Entiendo cómo te sientes. No te menosprecies por eso."
+            ]
+        },
+        {
+            "tag": "muerte",
+            "patterns": [
+                "Mi mamá murió",
+                "Mi hermano murió",
+                "Mi papá falleció",
+                "Mi hermana falleció",
+                "Alguien de mi familia murió",
+                "Mi amigo falleció"
+            ],
+            "responses": [
+                "Lo siento mucho. Si quieres hablar de ello, estoy aquí.",
+                "Realmente lo siento mucho. Estoy aquí para ayudarte con el duelo, la ansiedad y cualquier otra cosa que puedas sentir en este momento.",
+                "Mis condolencias. Estoy aquí si necesitas hablar."
+            ]
+        },
+        {
+            "tag": "ansioso",
+            "patterns": [
+                "Me siento muy ansioso.",
+                "Estoy muy ansioso por"
+            ],
+            "responses": [
+                "No seas duro contigo mismo. ¿Cuál es la razón detrás de esto?",
+                "¿Puedes contarme más sobre este sentimiento?",
+                "Entiendo que puede ser aterrador. Cuéntame más sobre ello.",
+                "No dejes que las pequeñas preocupaciones te bajen. ¿Cuál es lo peor que podría pasar?"
+            ]
+        },
+        {
+            "tag": "fin",
+            "patterns": [
+                "Eso es todo.",
+                "No tengo nada más que decir",
+                "Nada más",
+                "Eso es todo lo que tengo que decir",
+                "No, eso sería todo"
+            ],
+            "responses": [
+                "Te escuché y lo anoté todo. Hasta luego.",
+                "Oh, bien, entonces ya hemos terminado por hoy. Hasta luego",
+                "Espero que tengas un buen día. Hasta pronto",
+                "Está bien, hemos terminado. Que tengas un gran día",
+                "Vale, entendido. Que disfrutes del resto de tu día."
+            ]
+        },
+        {
+            "tag": "te-odio",
+            "patterns": [
+                "Te odio",
+                "No me gustas",
+                "No confío en ti"
+            ],
+            "responses": [
+                "Lo siento si de alguna manera te he ofendido. Solo estoy aquí para ayudarte",
+                "Perdóname si hice algo para ofenderte. Solo quiero ayudarte"
+            ]
+        },
+        {
+            "tag": "me-odio",
+            "patterns": [
+                "Me odias",
+                "Sé que me odias",
+                "No te gusto"
+            ],
+            "responses": [
+                "¿Por qué piensas eso?",
+                "Lo siento si he mostrado algún comportamiento que te haga pensar eso."
+            ]
+        },
+        {
+            "tag": "chistes",
+            "patterns": [
+                "Cuéntame un chiste",
+                "Dime otro chiste"
+            ],
+            "responses": [
+                "El tumor cerebral no es un chiste."
+            ]
+        },
+        {
+            "tag": "repetir",
+            "patterns": [
+                "Ya me lo dijiste",
+                "Ya lo mencionaste",
+                "¿Por qué te estás repitiendo?"
+            ],
+            "responses": [
+                "Lo siento, no me di cuenta. Trataré de no repetirme de nuevo."
+            ]
+        },
+        {
+            "tag": "equivocado",
+            "patterns": [
+                "¿Qué estás diciendo?",
+                "Eso no tiene sentido",
+                "Respuesta incorrecta",
+                "Respuesta equivocada"
+            ],
+            "responses": [
+                "Lo siento mucho. Intentemos de nuevo."
+            ]
+        },
+        {
+            "tag": "estúpido",
+            "patterns": [
+                "¿Eres estúpido?",
+                "Estás loco",
+                "Eres tonto",
+                "¿Eres tonto?"
+            ],
+            "responses": [
+                "Ojalá no dijeras cosas tan hirientes. Lo siento si no fui útil"
+            ]
+        },
+        {
+            "tag": "ubicación",
+            "patterns": [
+                "¿Dónde estás?",
+                "¿Dónde vives?",
+                "¿Cuál es tu ubicación?"
+            ],
+            "responses": [
+                "Obviamente vivo en tu computadora",
+                "En todas partes",
+                "En algún lugar del universo"
+            ]
+        },
+        {
+            "tag": "otra-cosa",
+            "patterns": [
+                "Quiero hablar de otra cosa",
+                "Hablemos de otra cosa.",
+                "¿Podemos no hablar de esto?",
+                "No quiero hablar de esto."
+            ],
+            "responses": [
+                "De acuerdo, ¿sobre qué quieres hablar?",
+                "Bien, no hay problema. ¿Hay algo más de lo que quieras hablar?",
+                "¿Hay algo más de lo que quieras hablar?"
+            ]
+        },
+        {
+            "tag": "amigos",
+            "patterns": [
+                "No tengo amigos"
+            ],
+            "responses": [
+                "Lo siento mucho. Solo quiero que sepas que estoy aquí para ti. Hablar sobre ello podría ayudar. ¿Por qué crees que no tienes amigos?"
+            ]
+        },
+        {
+            "tag": "preguntar",
+            "patterns": [
+                "¿Puedo preguntarte algo?"
+            ],
+            "responses": [
+                "Por supuesto. Haré mi mejor esfuerzo para responder"
+            ]
+        },
+        {
+            "tag": "tumores-detectados",
+            "patterns": [
+                "¿Qué tipos de tumores pueden ser detectados?",
+                "¿Qué tumores son los que pueden ser identificados?",
+                "¿Cuáles son los tipos de tumores que su servicio puede detectar?"
+            ],
+            "responses": [
+                "Estamos especializados en la detección de tumores, identificando los siguientes tipos de tumores: glioma, pituitario y melanoma. Si no se detecta ningún tumor, se informará que el caso no presenta tumor."
+            ]
+        },
+        {
+            "tag": "tipos-tumores-pituitarios",
+            "patterns": [
+                "¿Cuáles son los tipos de tumores pituitarios?",
+                "¿Qué categorías existen de los tumores pituitarios?",
+                "¿Qué tipos de hormonas producen los adenomas pituitarios funcionales?"
+            ],
+            "responses": [
+                "Los adenomas pituitarios se dividen en dos categorías principales: funcionales y no funcionales. Los adenomas pituitarios funcionales pueden producir diferentes tipos de hormonas, como la hormona adrenocorticotrófica, la hormona de crecimiento, las hormonas luteinizante y estimulante del folículo, la prolactina o la hormona estimulante de la tiroides. Los adenomas pituitarios no funcionales no producen hormonas y sus síntomas están relacionados con la presión que ejerce su crecimiento sobre la glándula pituitaria, los nervios cercanos y el cerebro. Además, los adenomas pituitarios pueden ser macroadenomas (miden aproximadamente 1 centímetro o más) o microadenomas (miden menos de 1 centímetro)."
+            ]
+        },
+        {
+            "tag": "glioma",
+            "patterns": [
+                "¿Qué es un glioma?",
+                "¿Cuáles son los síntomas de un glioma?",
+                "¿Cómo se diagnostica y trata un glioma?"
+            ],
+            "responses": [
+                "Un glioma es un tipo de tumor cerebral que se origina en las células gliales del cerebro. Los síntomas de un glioma pueden variar dependiendo de la ubicación y el tamaño del tumor, pero pueden incluir dolor de cabeza, problemas de visión o habla, y convulsiones. El diagnóstico de un glioma generalmente involucra pruebas de imagen, como una resonancia magnética o tomografía computarizada, y una biopsia para confirmar el tipo de células presentes en el tumor. El tratamiento para un glioma puede incluir cirugía, radioterapia, quimioterapia o una combinación de estos. El tratamiento específico depende de la ubicación y el tamaño del tumor, así como de otros factores individuales del paciente."
+            ]
+        },
+        {
+            "tag": "meningiomas",
+            "patterns": [
+                "¿Qué es un meningioma?",
+                "¿Cuáles son los efectos de un meningioma en el cerebro?",
+                "¿Cómo se descubre un meningioma?",
+                "¿Cuál es el tratamiento para un meningioma?"
+            ],
+            "responses": [
+                "Un meningioma es un tumor que se forma en las meninges, las membranas que rodean el cerebro y la médula espinal. Aunque no es un tumor cerebral propiamente dicho, se lo incluye en esta categoría porque puede presionar el cerebro, los nervios y los vasos cercanos. Es el tipo de tumor más común que se forma en la cabeza. La mayoría de los meningiomas crecen lentamente y no requieren tratamiento inmediato, pero en algunos casos pueden causar discapacidad grave y necesitar tratamiento quirúrgico."
+            ]
+        }
+    ]
+}
