@@ -77,9 +77,9 @@ else:
         if button_clicked:
                 # Realiza la predicción y muestra el resultado en la interfaz
                 prediction = process_image(image)
-                if prediction == 0:
+                if prediction == 1:
                     st.write("La imagen no corresponde con una MRI")
-                elif prediction == 1:
+                elif prediction == 0:
                     # Crea un placeholder para la imagen gif
                     placeholder = st.empty()
                     # Muestra el spinner antes de la predicción
