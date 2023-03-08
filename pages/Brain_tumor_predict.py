@@ -39,7 +39,7 @@ def process_image(image):
     # Añade una dimensión adicional para la dimensión del batch
     image = np.expand_dims(image, axis=0)
     # Realiza la predicción
-    prediction = keras_model.predict(image)
+    discriminator = discriminator_model.predict(image)
     # Devuelve la clase con la mayor probabilidad
     return np.argmax(prediction)
 
@@ -72,6 +72,7 @@ else:
         # Carga el modelo previamente entrenado
         with st.spinner('Cargando modelo...'):
             time.sleep(1)
+            discriminator_model = keras.models.load_model('model/discriminador.h5')
             keras_model = keras.models.load_model('model/brainmodel.h5')
 
         # Agrega un botón para realizar la predicción, solo este visible cuando se cargue la imagen 
@@ -100,13 +101,17 @@ else:
                 # Realiza la predicción y muestra el resultado en la interfaz
                 prediction = process_image(image)
                 if prediction == 0:
-                    st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
+                    st.write("La imagen no se corresponde con una imagen MRI")
                 elif prediction == 1:  
-                    st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
-                elif prediction == 2:  
-                    st.write("La imagen corresponde a un cerebro sano")
-                elif prediction == 3:  
-                    st.write("La imagen corresponde a un cerebro con tumor tipo pituitario")
+                    prediction = keras_model.predict(image)
+                    if prediction == 0:
+                        st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
+                    elif prediction == 1:  
+                        st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
+                    elif prediction == 2:  
+                        st.write("La imagen corresponde a un cerebro sano")
+                    elif prediction == 3:  
+                        st.write("La imagen corresponde a un cerebro con tumor tipo pituitario")
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
 #CCS
