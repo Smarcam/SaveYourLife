@@ -11,15 +11,11 @@ import datetime
 page_config = importar_config()
 #Menu
 show_pages_from_config()
-
-ruta_imagen = "img/logo.png"
-enlace = "https://saveyourlife.streamlit.app"
-st.markdown(f'<a href="{enlace}"><img src="{ruta_imagen}"></a>', unsafe_allow_html=True)
 def menu():
   return """
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="{enlace}">
-    <img src="{ruta_imagen}">
+  <a class="navbar-brand" href="https://saveyourlife.streamlit.app">
+  hola
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
