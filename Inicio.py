@@ -11,6 +11,7 @@ import datetime
 page_config = importar_config()
 #Menu
 show_pages_from_config()
+def menu():
   return """
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid">
