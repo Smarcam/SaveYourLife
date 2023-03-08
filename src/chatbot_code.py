@@ -1,16 +1,12 @@
 import nltk
 from nltk.tokenize import word_tokenize
-from nltk.stem import SnowballStemmer
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
 import pickle
 import warnings
 import numpy as np
-import tensorflow as tf
-from keras.models import Sequential, load_model
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
+from keras.models import load_model
 import random
 warnings.filterwarnings('ignore')
 
@@ -19,7 +15,7 @@ nltk.download("popular")
 # Cargar el archivo intents.json
 words = pickle.load(open("model/words.pkl", "rb"))
 classes = pickle.load(open("model/classes.pkl", "rb"))
-model = load_model("model/hatbot_model.h5")
+model = load_model("model/chatbot_model.h5")
 data_file = open('Json/intents.json', encoding='utf-8').read() # lee el fichero de json
 intents = json.loads(data_file) # carga el fichero de json
 
