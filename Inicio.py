@@ -14,24 +14,27 @@ show_pages_from_config()
 
 def menu():
   return """
-<nav  id="menu2" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#" src="img/logo.png"></a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mimenu2" aria-controls="mimenu2" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="mimenu2" style="">
-        <ul class="navbar-nav ml-auto p2">
-            <li class="nav-item active">
-                <a class="nav-link" href="#secccion-1" id="btn1">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#secccion-2" id="btn2" >Sobre mí</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#secccion-3" id="btn3">Contacto</a>
-            </li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Mi sitio web</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Acerca de</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 """
 st.markdown("""
