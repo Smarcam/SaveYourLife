@@ -1,37 +1,33 @@
 import streamlit as st 
-from nltk.chat.util import Chat, reflections
-from PIL import Image
 from functions import *
 import src.search as srch
-from functions import *
+import src.chatbot_code as chb
+import re
 
 #PageConfig
 page_config = importar_config()
-
-pairs = [
-    ['mi nombre es (.*)', ['Hola! %1. Soy medical robot. ¿En que puedo ayudarte?']],
-    ['hola', ['Hola Soy medical robot. ¿Que quiere?']],
-    ['que puedes hacer', ['puedo hacer muchas cosas como buscar , cosas sobre medicina y mucho más.']],
-    ['abrir (.*)', ['Lo siento, yo puedo buscarte %1 . No tengo acceso a eso.']],
-    ['piensas si hay un creador', ['Puede que si.']],
-    ['dime algo sobre ti', ['Soy un bot para ayudarte en todo lo que pueda.']],
-    ['quien soy', ['Una IA.']],
-    ['quien te creo', ['Unos humanos.']],
-    ['', ['']]
-]
-
 st.title("Chatbot")
 
-
 def main():
-    ref = st.text_input("¿En que puedo ayudarte?")
-
-    chat = Chat(pairs, reflections)
-    respo = chat.respond(ref)
-    if "abrir" in ref:
-        search_term = ref.split("abrir")[1]
+    ref = st.text_input("", label_visibility=st.session_state.visibility,
+        disabled=st.session_state.disabled,
+        placeholder="¿En que puedo ayudarte?")
+    
+    # Use una expresión regular para buscar cualquier variante de "buscar"
+    # en la entrada del usuario
+    match = re.search(r"(busc[oa]|encontrar|hallar)\b", ref, re.IGNORECASE)
+    if match:
+        # Extraer la consulta de búsqueda del usuario
+        search_term = ref[match.end():].strip()
         srch.on_enter_pressed(search_term)
-    st.write(respo)
+    else:    
+        split_ref = re.split(r"(búscame|busca)", ref, re.IGNORECASE)
+        if len(split_ref) > 1:
+            search_term = split_ref[-1].strip()
+            srch.on_enter_pressed(search_term)
+        else:
+            respo = chb.chatbot_response(ref)
+            st.write(respo)
 
 if __name__ == "__main__":
     main()
