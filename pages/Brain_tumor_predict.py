@@ -111,4 +111,4 @@ else:
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
 #CCS
-css = importar_css()
+importar_css('.streamlit/style.css')
