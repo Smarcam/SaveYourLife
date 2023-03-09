@@ -22,10 +22,10 @@ def menu():
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">💬Asistente💬</a>
+          <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">Asistente</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href=https://saveyourlife.streamlit.app/Brain Tumor" target="_self>🧠Brain Tumor🧠</a>
+            <a class="nav-link" href=https://saveyourlife.streamlit.app/Brain Tumor" target="_self>Brain Tumor</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">yatu</a>
