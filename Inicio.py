@@ -13,7 +13,7 @@ show_pages_from_config()
 def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <div class="container-fluid" margin-left: 35px;>
+  <div class="container-fluid" style="margin-left: 30px">
     <a class="navbar-brand" "href="https://saveyourlife.streamlit.app" target="_self">SaveYourLife</a>
     <div class="navbar-collapse collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
