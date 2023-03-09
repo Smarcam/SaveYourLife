@@ -25,10 +25,10 @@ def menu():
           <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">💬Asistente💬</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">l</a>
+            <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">sabe</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">j</a>
+            <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">yatu</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
