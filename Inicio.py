@@ -15,8 +15,6 @@ def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
-  <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
     <a class="navbar-brand" "href="https://saveyourlife.streamlit.app" target="_self">SaveYourLife</a>
     <div class="navbar-collapse collapse show" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
