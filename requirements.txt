@@ -14,3 +14,4 @@ hydralit_components==1.0.10
 datetime==5.0
 googlesearch-python==1.1.0
 joblib==1.1.1
+streamlit_chat
