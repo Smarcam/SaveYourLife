@@ -32,4 +32,4 @@ def main():
 if __name__ == "__main__":
     main()
 #CSS 
-css = importar_css()
+importar_css('.streamlit/style.css')
