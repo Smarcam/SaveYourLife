@@ -12,7 +12,7 @@ page_config = importar_config()
 show_pages_from_config()
 def menu():
   return """
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top style="background: #2657e4;">
   <div class="container-fluid" style="margin-left: 30px">
     <a class="navbar-brand" "href="https://saveyourlife.streamlit.app" target="_self">SaveYourLife</a>
     <div class="navbar-collapse collapse" id="navbarCollapse">
