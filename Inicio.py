@@ -5,7 +5,7 @@ import src.search as srch
 import src.load_event as le
 from st_pages import show_pages_from_config
 from functions import *
-import hydralit_components as hc
+#import hydralit_components as hc
 import datetime
 #PageConfig
 page_config = importar_config()
@@ -70,9 +70,7 @@ def menu():
     </div>
   </header>
 """
-st.markdown("""
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-""", unsafe_allow_html=True)
+
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
 """, unsafe_allow_html=True)
@@ -183,4 +181,5 @@ with col2:
 with col3:
    components.html('<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',height=420,width=350)
 #CCS
-css = importar_css()
+importar_css('.streamlit/style.css')
+importar_css('bootstrap/css/bootstrap.min.css')
