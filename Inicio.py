@@ -24,9 +24,6 @@ def menu():
         <li class="nav-item">
           <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">💬Asistente💬</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self>🧠Brain Tumor🧠</a>
-        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
