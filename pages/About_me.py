@@ -14,4 +14,4 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 
 #CSS
-css = importar_css()
+importar_css('.streamlit/style.css')
