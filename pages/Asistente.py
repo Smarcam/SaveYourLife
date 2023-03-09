@@ -1,35 +1,37 @@
-import streamlit as st 
-from functions import *
-import src.search as srch
+import streamlit as st
+from streamlit_chat import message
 import src.chatbot_code as chb
 import re
 
-#PageConfig
-page_config = importar_config()
-st.title("Chatbot")
+st.set_page_config(
+    page_title="Chat SaveYourLife",
+    page_icon=":robot:"
+)
 
-def main():
-    ref = st.text_input("", label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        placeholder="¿En que puedo ayudarte?")
-    
-    # Use una expresión regular para buscar cualquier variante de "buscar"
-    # en la entrada del usuario
-    match = re.search(r"(busc[oa]|encontrar|hallar)\b", ref, re.IGNORECASE)
-    if match:
-        # Extraer la consulta de búsqueda del usuario
-        search_term = ref[match.end():].strip()
-        srch.on_enter_pressed(search_term)
-    else:    
-        split_ref = re.split(r"(búscame|busca)", ref, re.IGNORECASE)
-        if len(split_ref) > 1:
-            search_term = split_ref[-1].strip()
-            srch.on_enter_pressed(search_term)
-        else:
-            respo = chb.chatbot_response(ref)
-            st.write(respo)
+st.header("Chat SaveYourLife")
 
-if __name__ == "__main__":
-    main()
-#CSS 
-importar_css('.streamlit/style.css')
+if 'generated' not in st.session_state:
+    st.session_state['generated'] = []
+
+if 'past' not in st.session_state:
+    st.session_state['past'] = []
+
+def get_text():
+    input_text = st.text_input("You: ","Hola!!", key="input")
+    return input_text
+
+def chatbot_response(user_input):
+    response = chb.chatbot_response(user_input)
+    return response
+
+user_input = get_text()
+
+if user_input:
+    bot_response = chatbot_response(user_input)
+    st.session_state.generated.append(bot_response)
+    st.session_state.past.append(user_input)
+
+if st.session_state['generated']:
+    for i in range(len(st.session_state['generated'])-1, -1, -1):
+        message(st.session_state["generated"][i], key=str(i))
+        message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
