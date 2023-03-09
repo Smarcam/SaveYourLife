@@ -15,7 +15,7 @@ def menu():
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" "href="https://saveyourlife.streamlit.app" target="_self">SaveYourLife</a>
-    <div class="navbar-collapse collapse show" id="navbarCollapse">
+    <div class="navbar-collapse collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
           <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">Asistente</a>
