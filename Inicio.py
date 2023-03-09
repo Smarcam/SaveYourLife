@@ -5,12 +5,11 @@ import src.search as srch
 import src.load_event as le
 from st_pages import show_pages_from_config
 from functions import *
-#import hydralit_components as hc
 import datetime
 #PageConfig
 page_config = importar_config()
 #Menu
-show_pages_from_config()
+#show_pages_from_config()
 def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
