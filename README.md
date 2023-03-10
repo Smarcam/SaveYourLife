@@ -1,4 +1,4 @@
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/logo.png?raw=true" alt="Logo">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/logo.png?raw=true" alt="Logo" width="400"/>
 
 ## Trabajo Fin de Máster FP en IA y Big Data, CPIFP Malaga Tech Park
 
@@ -20,7 +20,7 @@ El proyecto de Machine Learning constará de lo siguiente:
 * Mejora del modelo y optimización de sus parámetros para lograr una mayor precisión en las predicciones.
 * Integración de la aplicación de predicción de tumores cerebrales en una aplicacion Web.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/cerebro.png?raw=true" alt="Cerebro">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/cerebro.png?raw=true" alt="Cerebro" width="400"/>
 
 ## RESUMEN
 
@@ -46,7 +46,7 @@ El proyecto de ML propuesto se enfoca en ayudar a los profesionales médicos que
 
 La tecnología aplicada a la ciencia médica se enfoca en la utilización de la inteligencia artificial (IA) y el aprendizaje automático (ML) para agilizar diagnósticos y ofrecer mejores tratamientos a los pacientes. 
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/inicio_2.jpeg?raw=true" alt="IA-Medical">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/inicio_2.jpeg?raw=true" alt="IA-Medical" width="400"/>
 
 
 La IA y el ML son métodos, algoritmos y aplicaciones utilizados en el área médica para colaborar con los profesionales en su entorno y en investigaciones que se llevan a cabo. 
@@ -81,7 +81,7 @@ En resumen, la justificación e importancia del proyecto radican en la necesidad
 
 La inteligencia artificial y su subárea de Machine Learning son herramientas útiles en la ciencia médica y en particular para el diagnóstico temprano de enfermedades. 
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/inicio.jpeg?raw=true" alt="IA-Medical">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/inicio.jpeg?raw=true" alt="IA-Medical" width="400"/>
 
 
 El modelo de ML para la detección de tumores cerebrales propuesto en este proyecto podría beneficiar a los profesionales médicos para un diagnóstico más ágil de estos problemas, con el fin de ofrecer mejor atención a los pacientes. Además, se utilizará una plataforma web y se emplearán datos públicos para su entrenamiento, lo que aumentará su accesibilidad y replicabilidad en otros entornos de salud.
@@ -146,27 +146,22 @@ En este proyecto, se ha utilizado el sitio web de Kaggle como una de las princip
 
 En esta la [fuente de datos 1](https://www.kaggle.com/datasets/abhranta/brain-tumor-detection-mri) se obtuvieron las imagenes necesrias para crear un primer modelo, capaz de detectar si el paciente tenia cáncer o no.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/no0.jpg?raw=true" alt="Sin tumor">
-
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/y0.jpg?raw=true" alt="con tumor">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/no0.jpg?raw=true" alt="Sin tumor" width="200"/>
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/y0.jpg?raw=true" alt="con tumor" width="200"/>
 
 En la [fuente de datos 2](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri) se obtuvieron imagnes para hacer un segundo modelo que fuese capaz de identificar el tipo de tumor o si no tenia tumor.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_glioma.jpg?raw=true" alt="Glioma">
-
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_menignoma.jpg?raw=true" alt="Menignoma">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_glioma.jpg?raw=true" alt="Glioma" width="200"/>
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_menignoma.jpg?raw=true" alt="Menignoma" width="200"/>
 
 en la [fuente de datos 3](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) se obtuvieron imagenes para hacer un tercer modelo que mejorara el rendimiento del modelo anterior.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_pituitario.jpg?raw=true" alt="pituitario">
-
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/sin_tumor.jpg?raw=true" alt="Sin tumor">
-
-
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/tipo_pituitario.jpg?raw=true" alt="pituitario" width="200"/>
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/sin_tumor.jpg?raw=true" alt="Sin tumor" width="200"/>
 
 y por ultimo en la [fuente de datos 4](https://www.mediafire.com/file/bv1wuu792sn9asb/Pictures_1-2000.rar/file) se obtuvieron imagenes de todotipo para poder hacer que el modelo discrimine entre imagenes random, e imagenes cerebrales de resonancia magnetica.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/imagen_random.jpg?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img_test_web/imagen_random.jpg?raw=true" alt="Random" width="200"/>
 
 Al utilizar múltiples fuentes de datos, se ha aumentado la diversidad y cantidad de imágenes de resonancias magnéticas disponibles para el proyecto, lo que puede mejorar la precisión y eficacia del modelo de detección de tumores cerebrales.
 
@@ -184,7 +179,7 @@ Finalmente, se evalúa el modelo utilizando un conjunto de datos de prueba y se 
 
 Estas son las librerías que se utilizaron en este proyecto
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_import.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_import.png?raw=true" alt="import" width="400"/>
 
 #### Extraccion y visualización de los datos
 
@@ -196,7 +191,7 @@ Se divide el conjunto de datos de entrenamiento en dos partes usando la función
 
 La variable "test_size" especifica la fracción de datos que se utilizarán para la validación y se establece en 10%, "shuffle" se establece en "True" para mezclar los datos antes de dividirlos y "random_state" se establece en 42 para garantizar que los mismos datos se dividan de la misma manera cada vez que se ejecute el código.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="set" width="400"/>
 
 #### Costrucción de la red neuronal
 
@@ -204,7 +199,7 @@ Crear una estructura secuencial de capas, que pueden ser de diferentes tipos, co
 
 Cada capa tiene diferentes parámetros que se ajustan durante el entrenamiento para mejorar la precisión de la red neuronal en la tarea específica que se está abordando. El resumen de la red neuronal muestra una descripción detallada de cada capa y sus parámetros.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CNN.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CNN.png?raw=true" alt="cnn" width="400"/>
 
 #### Entrenamiento 
 
@@ -214,7 +209,7 @@ Además, se utilizan callbacks para monitorear el entrenamiento y mejorar la pre
 
 La función devuelve información sobre el entrenamiento, como la pérdida y la precisión en el conjunto de entrenamiento y validación a lo largo del tiempo, en un objeto "history".
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_fit.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_fit.png?raw=true" alt="fit" width="400"/>
 
 Utilizamos la técnica de validación cruzada. La función CV_training se encarga de entrenar y validar el modelo en diferentes subconjuntos de datos usando la función Model_fit.
 
@@ -226,7 +221,7 @@ Los parámetros especificados para el generador de datos incluyen el directorio 
 
 La función devuelve una lista de objetos History que se utilizan para graficar la evolución de la pérdida y la precisión durante el entrenamiento en cada partición del conjunto de datos.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="cv" width="400"/>
 
 #### Conclusiones y Resultado
 
@@ -256,13 +251,13 @@ Por último, se combinan los dataframes correspondientes a cada tipo de tumor y 
 
 La variable "test_size" especifica la fracción de datos que se utilizarán para la validación y se establece en 10%, "shuffle" se establece en "True" para mezclar los datos antes de dividirlos y "random_state" se establece en 42 para garantizar que los mismos datos se dividan de la misma manera cada vez que se ejecute el código.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="set" width="400"/>
 
 #### Costrucción de la red neuronal
 
 Cargamos el modelo preentrenado anteriormente y luego lo modifica para realizar una tarea de clasificación de imágenes de tumores cerebrales. La ventaja de cargar un modelo preentrenado es que ya ha aprendido a extraer características de las imágenes, lo que puede ahorrar tiempo y mejorar la precisión de la tarea de clasificación. La función remueve las últimas seis capas del modelo preentrenado y las reemplaza con capas personalizadas de clasificación.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_CNN.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_CNN.png?raw=true" alt="cnn" width="400"/>
 
 #### Entrenamiento 
 
@@ -272,7 +267,7 @@ Además, se utilizan callbacks para monitorear el entrenamiento y mejorar la pre
 
 La función devuelve información sobre el entrenamiento, como la pérdida y la precisión en el conjunto de entrenamiento y validación a lo largo del tiempo, en un objeto "history".
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_fit.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_fit.png?raw=true" alt="fit" width="400"/>
 
 Utilizamos la técnica de validación cruzada. La función CV_training se encarga de entrenar y validar el modelo en diferentes subconjuntos de datos usando la función Model_fit.
 
@@ -284,7 +279,7 @@ Los parámetros especificados para el generador de datos incluyen el directorio 
 
 La función devuelve una lista de objetos History que se utilizan para graficar la evolución de la pérdida y la precisión durante el entrenamiento en cada partición del conjunto de datos.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="cv" width="400"/>
 
 #### Conclusiones y Resultado
 
@@ -294,7 +289,7 @@ La utilización de un modelo pre-entrenado es una técnica comúnmente utilizada
 
 En resumen, la inclusión del modelo pre-entrenado ha permitido mejorar la precisión de la clasificación de los diferentes tipos de tumores cerebrales con un menor costo computacional y de tiempo en el entrenamiento del modelo.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_CNN.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_2_CNN.png?raw=true" alt="cnn" width="400"/>
 
 ### 3 Discriminador mri
 
@@ -308,7 +303,7 @@ Gracias a este nuevo modelo, nuestra aplicación ahora puede identificar si la i
 
 Estas son las librerías que se utilizaron en este proyecto
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_import.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_import.png?raw=true" alt="import" width="400"/>
 
 #### Extraccion y visualización de los datos
 
@@ -320,7 +315,7 @@ Se divide el conjunto de datos de entrenamiento en dos partes usando la función
 
 La variable "test_size" especifica la fracción de datos que se utilizarán para la validación y se establece en 10%, "shuffle" se establece en "True" para mezclar los datos antes de dividirlos y "random_state" se establece en 42 para garantizar que los mismos datos se dividan de la misma manera cada vez que se ejecute el código.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_set.png?raw=true" alt="set" width="400"/>
 
 #### Costrucción de la red neuronal
 
@@ -328,7 +323,7 @@ Crear una estructura secuencial de capas, que pueden ser de diferentes tipos, co
 
 Cada capa tiene diferentes parámetros que se ajustan durante el entrenamiento para mejorar la precisión de la red neuronal en la tarea específica que se está abordando. El resumen de la red neuronal muestra una descripción detallada de cada capa y sus parámetros.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CNN.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CNN.png?raw=true" alt="cnn" width="400"/>
 
 #### Entrenamiento 
 
@@ -338,7 +333,7 @@ Además, se utilizan callbacks para monitorear el entrenamiento y mejorar la pre
 
 La función devuelve información sobre el entrenamiento, como la pérdida y la precisión en el conjunto de entrenamiento y validación a lo largo del tiempo, en un objeto "history".
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_fit.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_fit.png?raw=true" alt="fit" width="400"/>
 
 Utilizamos la técnica de validación cruzada. La función CV_training se encarga de entrenar y validar el modelo en diferentes subconjuntos de datos usando la función Model_fit.
 
@@ -350,7 +345,7 @@ Los parámetros especificados para el generador de datos incluyen el directorio 
 
 La función devuelve una lista de objetos History que se utilizan para graficar la evolución de la pérdida y la precisión durante el entrenamiento en cada partición del conjunto de datos.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_1_CV.png?raw=true" alt="cv" width="400"/>
 
 #### Conclusiones y Resultado
 
@@ -370,7 +365,7 @@ La incorporación de técnicas de procesamiento del lenguaje natural ha permitid
 
 En resumen, el chatbot que hemos desarrollado es una herramienta útil que utiliza técnicas de procesamiento del lenguaje natural para mejorar las respuestas a preguntas sobre los tumores que podemos detectar. La inclusión de información precisa y actualizada sobre los tumores permite a los usuarios comprender mejor esta enfermedad y tomar decisiones informadas sobre su salud.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png?raw=true" alt="chatbot">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png?raw=true" alt="chatbot" width="400"/>
 
 https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png
 
@@ -378,7 +373,7 @@ https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png
 
 Estas son las librerías que se utilizaron en este proyecto
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_import.png?raw=true" alt="Import">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_import.png?raw=true" alt="Import" width="400"/>
 
 #### Extraccion datos
 
@@ -386,7 +381,7 @@ La extracción de datos se realizó a partir de un archivo JSON que hemos realiz
 
 Se crearon variables para almacenar las palabras únicas, las etiquetas únicas y una lista de tuplas que contiene las palabras de los patrones y sus etiquetas. Se utilizó la biblioteca NLTK para llevar a cabo la lematización de las palabras en español, descargando el modelo de datos del WordNet en varios idiomas, incluido el español, para agrupar las palabras en conjuntos de sinónimos y proporcionar definiciones cortas. En general, se utilizó una variedad de técnicas y herramientas para extraer y procesar los datos de manera eficiente y efectiva.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_JSON.png?raw=true" alt="JSON">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_JSON.png?raw=true" alt="JSON" width="400"/>
 
 #### Lematización
 
@@ -404,7 +399,7 @@ Los datos de entrenamiento se crean utilizando una técnica llamada "bag of word
 
 El código finaliza imprimiendo "Datos de entrenamiento creados", lo que indica que los datos de entrenamiento se han creado correctamente y están listos para ser utilizados para entrenar el modelo de clasificación.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_lema.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_lema.png?raw=true" alt="Random" width="400"/>
 
 #### Entrenamiento 
 
@@ -418,7 +413,7 @@ La capa de salida utiliza la función de activación Softmax y tiene un número 
 
 El código también crea una instancia del modelo llamado model y luego imprime los pesos de la primera capa del modelo usando la función get_weights(). Los pesos son inicializados de forma aleatoria antes de que el modelo sea entrenado.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_CNN.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_4_CNN.png?raw=true" alt="cnn" width="400"/>
 
 definimos una función llamada Model_fit que entrena un modelo de red neuronal y lo guarda en un archivo llamado chatbot_model.h5. Luego, llama a esta función con los datos de entrenamiento train_x y train_y para entrenar el modelo y guarda el historial de entrenamiento en la variable history.
 
@@ -428,7 +423,7 @@ La función fit se utiliza para entrenar el modelo con los datos de entrenamient
 
 Finalmente, el modelo entrenado se guarda en un archivo chatbot_model.h5 y se imprime un mensaje que indica que el modelo se ha creado y guardado correctamente. El historial de entrenamiento se devuelve como un resultado de la función y se asigna a la variable history.
 
-<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="Random">
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="fit" width="400"/>
 
 #### Conclusiones y Resultado
 
@@ -437,9 +432,3 @@ El chatbot desarrollado en este proyecto utiliza técnicas de procesamiento del 
 Se extrajeron datos de un archivo JSON mediante la utilización de la biblioteca NLTK para la lematización de palabras en español. Se creó un modelo de clasificación de intenciones de usuario utilizando una técnica llamada "bag of words" y se entrenó utilizando una red neuronal con tres capas: una capa de entrada, una capa oculta y una capa de salida. 
 
 El modelo se ha mejorado utilizando técnicas de preprocesamiento de datos para proporcionar respuestas más precisas y relevantes. En general, el chatbot es una herramienta útil que mejora la experiencia del usuario y ayuda a comprender mejor los tumores y tomar decisiones informadas sobre la salud.
-
-
-
-
-
-
