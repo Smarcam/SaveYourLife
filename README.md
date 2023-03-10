@@ -367,8 +367,6 @@ En resumen, el chatbot que hemos desarrollado es una herramienta útil que utili
 
 <img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png?raw=true" alt="chatbot" width="400"/>
 
-https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Chatbot.png
-
 #### librerias que usamos para el proyecto 
 
 Estas son las librerías que se utilizaron en este proyecto
