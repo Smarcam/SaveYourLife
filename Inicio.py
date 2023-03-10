@@ -15,7 +15,7 @@ st.header("Buscador")
 term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
 if term:
   srch.on_enter_pressed(term)
-  
+st.image("img/logo.png")  
 def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #31b0d5">
