@@ -27,7 +27,7 @@ def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #0089b1">
   <div class="container-fluid" style="margin-left: 120px">
-    <a class="navbar-brand" href="https://saveyourlife.streamlit.app" target="_self"><img src="http://localhost:8501/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png alt="Mi imagen" style="width: 50px; margin-top: 0px; margin-left: -60px;"></a>
+    <a class="navbar-brand" href="https://saveyourlife.streamlit.app" target="_self"><img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 50px; margin-top: 0px; margin-left: -60px;"></a>
     <div class="navbar-collapse collapse" id="navbarCollapse" style="margin-left: -20px;">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
@@ -50,21 +50,21 @@ def brand():
   return """
 <div class="row" style="margin-top: 55px">
       <div class="col-lg-4">
-        <img src="http://localhost:8501/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 137, 177, 0.57)"/><text x="50%" y="50%" dy=".3em"></text></svg>
         <h2 class="fw-normal">Asistente</h2>
         <p>Asistente virtual que te ayudara a todo.</p>
         <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/Asistente" target="_self">IR  &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="http://localhost:8501/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 137, 177, 0.57)"/><text x="50%" y="50%" fill="rgba(0, 137, 177, 0.57)" dy=".3em"></text></svg>
         <h2 class="fw-normal">Tumor Cerebal</h2>
         <p>Introduce una imagen de radio grafia cerebal y veremos que tal estas.</p>
         <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self">IR &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="http://localhost:8501/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 137, 177, 0.57)"/><text x="50%" y="50%" fill="rgba(0, 137, 177, 0.57)" dy=".3em"></text></svg>
         <h2 class="fw-normal">Sobre Nosotros</h2>
         <p>Somos nosotros.</p>
@@ -84,7 +84,7 @@ def cards():
         <p>Los visitantes también pueden acceder a un blog de Twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación de tumores y la inteligencia artificial.</p>
       </div>
       <div class="col-md-5">
-        <img src="http://localhost:8501/media/bc45eaa9d7d95ba35fdb13cfadf6410841e8b5c72a28c72aa1fadde0.jpg" alt="Mi imagen" style="max-width:1000px;width:100%;height:auto;margin-top:100px;">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/bc45eaa9d7d95ba35fdb13cfadf6410841e8b5c72a28c72aa1fadde0.jpg" alt="Mi imagen" style="max-width:1000px;width:100%;height:auto;margin-top:100px;">
       </div>
 </div>
 <div class="row featurette">
@@ -178,4 +178,4 @@ st.markdown(footer(), unsafe_allow_html=True)
 #CCS
 importar_css('.streamlit/stylefooter.css') 
 importar_css('bootstrap/css/bootstrap.min.css')
-#importar_css('.streamlit/style.css')
+importar_css('.streamlit/style.css')
