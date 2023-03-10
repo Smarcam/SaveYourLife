@@ -78,7 +78,7 @@ def testo():
         <p>Los visitantes también pueden acceder a un blog de Twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación de tumores y la inteligencia artificial.</p>
       </div>
       <div class="col-md-5">
-        <img src="https://saveyourlife.streamlit.app:443/~/+/media/9ecfcdb08bc77781235191f7f660d542dc3c03b7b18821471930be11.jpg" alt="Mi imagen" style="width:200px">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/9ecfcdb08bc77781235191f7f660d542dc3c03b7b18821471930be11.jpg" alt="Mi imagen">
       </div>
     </div>
 """
