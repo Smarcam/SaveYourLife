@@ -430,3 +430,56 @@ El chatbot desarrollado en este proyecto utiliza técnicas de procesamiento del 
 Se extrajeron datos de un archivo JSON mediante la utilización de la biblioteca NLTK para la lematización de palabras en español. Se creó un modelo de clasificación de intenciones de usuario utilizando una técnica llamada "bag of words" y se entrenó utilizando una red neuronal con tres capas: una capa de entrada, una capa oculta y una capa de salida. 
 
 El modelo se ha mejorado utilizando técnicas de preprocesamiento de datos para proporcionar respuestas más precisas y relevantes. En general, el chatbot es una herramienta útil que mejora la experiencia del usuario y ayuda a comprender mejor los tumores y tomar decisiones informadas sobre la salud.
+
+### Implementación Web
+
+#### Descripción de la implementación web en Streamlit
+
+Para llevar a cabo la implementación de los algoritmos de detección de tumores, hemos desarrollado una aplicación web utilizando la herramienta Streamlit.
+
+*La aplicación cuenta con una página de inicio y tres subpáginas a las que se puede acceder desde la página principal:
+
+* Asistente Chatbot: una página en la que se puede interactuar con un chatbot que brinda información sobre la detección de tumores y responde preguntas frecuentes relacionadas con el tema.
+
+* Detección de tumores: una página en la que se puede cargar una imagen médica para realizar la detección automática de tumores. La página muestra el resultado de la detección junto con estadísticas relevantes.
+
+* Acerca de nosotros: una página que proporciona información sobre el equipo de desarrolladores y sus roles en el proyecto.
+
+La aplicación web en Streamlit proporciona una interfaz fácil de usar para interactuar con los algoritmos de detección de tumores y obtener resultados precisos en cuestión de segundos.
+
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="inicio" width="400"/>
+
+### Detección de tumores
+
+La página de tumores es una herramienta en línea diseñada para ayudar en la detección de tumores mediante la carga y procesamiento de imágenes médicas. Al subir una imagen médica, la página utiliza los algoritmos creados de procesamiento de imágenes para detectar la presencia de tumores en la imagen.
+
+Esta herramienta es especialmente útil para profesionales médicos que buscan realizar un diagnóstico preciso y temprano de tumores en sus pacientes. También puede ser utilizada por individuos preocupados por su salud, que deseen monitorear la presencia de tumores en sus propios cuerpos.
+
+La página de tumores es una solución innovadora y práctica para la detección temprana de tumores, lo que puede ayudar a salvar vidas mediante un diagnóstico oportuno y tratamiento adecuado.
+
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="deteccion de tumores" width="400"/>
+
+#### Asistente Chatbot
+
+La página del asistente es una plataforma en línea que utiliza un chatbot para brindar asistencia y automatizada a los usuarios. El chatbot está diseñado con procesamiento del leguaje natural para entender las preguntas y solicitudes de los usuarios, y proporcionar respuestas útiles y relevantes en tiempo real.
+
+Los usuarios pueden interactuar con el chatbot a través de la página web y hacer preguntas. El chatbot utiliza técnicas avanzadas de procesamiento de lenguaje natural para comprender la consulta y proporcionar una respuesta precisa y completa.
+
+Además de responder preguntas, el chatbot también puede realizar tareas como consultas en la web.
+
+La página del asistente es una solución práctica y conveniente para aquellos que necesitan una ayuda rápida y confiable en línea. 
+
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="chatbot" width="400"/>
+
+
+### Acerca de nosotros
+
+La última página creada es una sección de "Acerca de nosotros" (About Us) que describe com ha sido el proyecto detras de la pagina. La página proporciona información detallada sobre la visión y valores por los que hemos desarrollado este proyecto, así como detalles sobre su historia y logros.
+
+La página de "Acerca de nosotros" es una parte importante del sitio web, ya que permite a los visitantes conocer más sobre el trabjo detrás de la página y comprender mejor su propósito y enfoque. También puede ayudar a establecer la confianza y credibilidad del proyecto, ya que proporciona información transparente y auténtica sobre quiénes son y qué hacen.
+
+La página de "Acerca de nosotros" puede incluir secciones como "Nuestra historia", "Nuestro equipo", "Nuestra misión y visión", "Nuestros logros" y "Nuestros valores". Cada sección proporciona información importante que ayuda a los visitantes a entender la esencia de la organización y su propósito en el mundo.
+
+En resumen, la página de "Acerca de nosotros" es esencial para cualquier sitio web que desee establecer una relación auténtica y confiable con sus visitantes, ya que brinda transparencia y contexto sobre la organización detrás de la página.
+
+<img src="https://github.com/Smarcam/SaveYourLife/blob/main/img/img_doc/Captura_f4_fit.png?raw=true" alt="about us" width="400"/>
