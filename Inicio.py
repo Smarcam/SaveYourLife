@@ -10,76 +10,85 @@ import datetime
 page_config = importar_config()
 #Menu
 show_pages_from_config()
+
+st.header("Buscador")
+term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
+if term:
+  srch.on_enter_pressed(term)
+  
 def menu():
   return """
-<nav class="navbar navbar-expand-md navbar-dark fixed-top $cyan-500" style="background: #31b0d5">
-  <div class="container-fluid" style="margin-left: 30px">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #31b0d5">
+  <div class="container-fluid" style="margin-left: 35px">
     <a class="navbar-brand" "href="https://saveyourlife.streamlit.app" target="_self">SaveYourLife</a>
     <div class="navbar-collapse collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self">Asistente</a>
+          <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self" style="color:#d1e9ff;font-size: 20px;">Asistente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/About me" target="_self">About me</a>
+          <a class="nav-link" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self" style="color:#d1e9ff;font-size: 20px;">Brain Tumor</a> 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self">Brain Tumor</a>
+         <a class="nav-link" href="https://saveyourlife.streamlit.app/About me" target="_self" style="color:#d1e9ff;font-size: 20px;">About me</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Introduzca su búsqueda..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
 """
-st.markdown("""
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-""", unsafe_allow_html=True)
-#<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-#<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-st.markdown("""
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-""", unsafe_allow_html=True)
-
 st.markdown(menu(), unsafe_allow_html=True)
-with st.container():
-   le.logo_clickable('img/logo.png', "https://saveyourlife.streamlit.app")
-  
-with st.container():
-    st.header("Buscador")
-    term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
-    if term:
-        srch.on_enter_pressed(term)
 
-col1, col2 = st.columns([20, 8])
-with col1:
-    st.markdown("""
-      La página web del SaveYourLife de Predicción de Tumores es un sitio dedicado a brindar información y servicios relacionados con la detección temprana 
-      y la predicción de tumores mediante el uso de inteligencia artificial. En la página principal, los visitantes pueden encontrar información sobre los 
-      trabajos que realizamos, el equipo de investigación, las tecnologías utilizadas y los resultados obtenidos. También se destacan los servicios disponibles, 
-      como la detección temprana de cáncer mediante la evaluación de imágenes médicas y la predicción del riesgo de desarrollar ciertos tipos de tumores. 
+def fotos():
+  return """
+<div class="row" style="margin-top: 55px">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2 class="fw-normal">Asistente</h2>
+        <p>Asistente virtual que te ayudara a todo.</p>
+        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/Asistente" target="_self">IR  &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2 class="fw-normal">Tumor Cerebal</h2>
+        <p>Introduce una imagen de radio grafia cerebal y veremos que tal estas.</p>
+        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self">IR &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2 class="fw-normal">Sobre Nosotros</h2>
+        <p>Somos nosotros.</p>
+        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/About me" target="_self">IR &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+"""
+st.markdown(fotos(), unsafe_allow_html=True)
 
-      Además, la página web ofrece acceso a herramientas y recursos para pacientes y profesionales de la salud, como la carga de imagenes para la evaluación médica
-      y la visualización de resultados de investigaciones recientes.
-
-      Los visitantes también pueden acceder a un blog de twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación 
-      de tumores y la inteligencia artificial.
-      """)
+def testo():
+  return """
+<div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">¿A qué nos dedicamos?</h2>
+        <p>La página web del SaveYourLife de Predicción de Tumores es un sitio enfocado a brindar información y servicios relacionados con la detección temprana y la predicción de tumores mediante el uso de inteligencia artificial. En la página principal, los visitantes pueden encontrar información sobre los trabajos que realizamos, el equipo de investigación, las tecnologías utilizadas y los resultados obtenidos. También se destacan los servicios disponibles, como la detección temprana de cáncer mediante la evaluación de imágenes médicas y la predicción del riesgo de desarrollar ciertos tipos de tumores.</p>
+        <p>Además, la página web ofrece acceso a herramientas y recursos para pacientes y profesionales de la salud, como la carga de imágenes para la evaluación médica y la visualización de resultados de investigaciones recientes.</p>
+        <p>Los visitantes también pueden acceder a un blog de Twitter actualizado regularmente con noticias, estudios y artículos relacionados con la investigación de tumores y la inteligencia artificial.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="http://localhost:8502/media/9ecfcdb08bc77781235191f7f660d542dc3c03b7b18821471930be11.jpg" alt="Mi imagen" width="300">
+      </div>
+    </div>
+"""
+st.markdown(testo(), unsafe_allow_html=True)
 
 st.markdown("""
   La página web de SaveYourLife de Predicción de Tumores es fácil de navegar y está diseñada para ser accesible tanto para expertos en el tema como para 
   el público en general. La plataforma es moderna y segura, y se encuentra respaldada por un equipo de expertos en tecnología y seguridad informática 
   para garantizar la protección de la información del usuario y la privacidad de los datos.
   """)
-
-with col2:
-   st.image('img/inicio.jpeg')
-
 col1, col2 = st.columns([9, 20])
 with col1:
    st.image('img/inicio_2.jpeg')
@@ -123,8 +132,6 @@ with col1:
 with col2:
    st.markdown('### Nuestros Blog')
 
-#st.image('img/logo.png')
-#st.title("SaveYourLife Tumor Brain Predict!")
 col1, col2, col3 = st.columns([10, 10, 10])
 
 with col1:
