@@ -15,7 +15,6 @@ st.header("Buscador")
 term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
 if term:
   srch.on_enter_pressed(term)
-st.image("img/logo.png")  
 def menu():
   return """
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #31b0d5">
@@ -47,6 +46,7 @@ def fotos():
   return """
 <div class="row" style="margin-top: 55px">
       <div class="col-lg-4">
+        <img src="https://saveyourlife.streamlit.app:443/~/+/media/950a0795b6bab53667a60acd58ec3b8ede9dddeade8c4e8ab2510ae8.png" alt="Mi imagen" style="width:100;height:100px;margin-top:90px">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
         <h2 class="fw-normal">Asistente</h2>
         <p>Asistente virtual que te ayudara a todo.</p>
