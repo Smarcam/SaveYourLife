@@ -92,45 +92,6 @@ def cards():
 #FOOTER
 def footer():
   return """
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<div class="footer">
-  <div class="wrapper">
-      <div class="icon facebook">
-        <div class="tooltip">
-            Facebook
-        </div>
-        <span><i class="fab fa-facebook-f"></i></span>
-      </div>
-      <div class="icon twitter">
-        <div class="tooltip">
-            Twitter
-        </div>
-        <span><i class="fab fa-twitter"></i></span>
-      </div>
-      <div class="icon instagram">
-        <div class="tooltip">
-            Instagram
-        </div>
-        <span><i class="fab fa-instagram"></i></span>
-      </div>
-      <div class="icon github">
-        <div class="tooltip">
-            Github
-        </div>
-        <span><i class="fab fa-github"></i></span>
-      </div>
-      <div class="icon youtube">
-        <div class="tooltip">
-            YouTube
-        </div>
-        <span><i class="fab fa-youtube"></i></span>
-      </div>
-</div>
-</div>
-"""
-def footer1():
-  return """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <div class="wrapper">
     <div class="button">
@@ -163,43 +124,39 @@ def footer1():
     </div>
 </div>
 """
+#FOOTER
 def footerasistente():
   return """
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<div class="footerasistente">
-  <div class="wrapper">
-      <div class="icon facebook">
-        <div class="tooltip">
-            Facebook
-        </div>
-        <span><i class="fab fa-facebook-f"></i></span>
+<div class="wrapper">
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-python"></i>
       </div>
-      <div class="icon twitter">
-        <div class="tooltip">
-            Twitter
-        </div>
-        <span><i class="fab fa-twitter"></i></span>
+      <span>V.3.10</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-linkedin"></i>
       </div>
-      <div class="icon instagram">
-        <div class="tooltip">
-            Instagram
-        </div>
-        <span><i class="fab fa-instagram"></i></span>
+      <span>Samuel</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-github"></i>
       </div>
-      <div class="icon github">
-        <div class="tooltip">
-            Github
-        </div>
-        <span><i class="fab fa-github"></i></span>
+      <span>Github</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-linkedin"></i>
       </div>
-      <div class="icon youtube">
-        <div class="tooltip">
-            YouTube
-        </div>
-        <span><i class="fab fa-youtube"></i></span>
-      </div>
-</div>
+      <span>Miguel Á</span>
+      <a href="hola.com">⤴️</a>
+    </div>
 </div>
 """
 #
