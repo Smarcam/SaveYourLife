@@ -22,6 +22,14 @@ html,body{
 	color: #009bcf;
 	text-align: left;
 }
+.footerasistente {
+  position: fixed;
+  left: -80px;
+  bottom: 0;
+  width: auto;
+  color: #009bcf;
+  text-align: left;
+}
 .wrapper{
   display: inline-flex;
   margin-left: 70px;
