@@ -13,7 +13,7 @@ show_pages_from_config()
 #Menu
 menu = menu()
 #Footer
-footer = footer()
+footerasistente = footerasistente()
 
 st.markdown(menu, unsafe_allow_html=True)
 
@@ -120,7 +120,7 @@ else:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
         
 #footer       
-st.markdown(footer, unsafe_allow_html=True)
+st.markdown(footerasistente, unsafe_allow_html=True)
 #CCS
 importar_css('.streamlit/stylefooter.css') 
 importar_css('bootstrap/css/bootstrap.min.css')
