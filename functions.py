@@ -129,6 +129,40 @@ def footer():
 </div>
 </div>
 """
+def footer1():
+  return """
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<div class="wrapper">
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-python"></i>
+      </div>
+      <span>V.3.10</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-linkedin"></i>
+      </div>
+      <span>Samuel</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-github"></i>
+      </div>
+      <span>Github</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+    <div class="button">
+      <div class="icon">
+          <i class="fab fa-linkedin"></i>
+      </div>
+      <span>Miguel Á</span>
+      <a href="hola.com">⤴️</a>
+    </div>
+</div>
+"""
 def footerasistente():
   return """
 <link rel="stylesheet" href="style.css">
