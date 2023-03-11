@@ -90,7 +90,7 @@ def cards():
 </div>
 """
 #FOOTER
-def footer():
+def footerinicio():
   return """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <div class="wrapper">
@@ -125,7 +125,7 @@ def footer():
 </div>
 """
 #FOOTER
-def footerasistente():
+def footer():
   return """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <div style="position: fixed;bottom: 230px;">
