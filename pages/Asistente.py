@@ -11,7 +11,7 @@ show_pages_from_config()
 #Menu
 menu = menu()
 #Footer
-footer = footer()
+footerasistente = footerasistente()
 
 st.markdown(menu, unsafe_allow_html=True)
 st.title("Chatbot")
@@ -71,7 +71,7 @@ st.markdown("""
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 """, unsafe_allow_html=True)
 
-st.markdown(footer, unsafe_allow_html=True)
+st.markdown(footerasistente, unsafe_allow_html=True)
 #CCS
 importar_css('.streamlit/stylefooter.css') 
 importar_css('bootstrap/css/bootstrap.min.css')
