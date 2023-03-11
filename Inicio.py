@@ -29,6 +29,7 @@ with col2:
 st.image("img/logo.png")
 st.image("img/icon.png")
 st.image("img/inicio.png")
+st.image("img/inicio_2.jpeg")
 
 st.markdown(menu, unsafe_allow_html=True)
 st.markdown(brand, unsafe_allow_html=True)
