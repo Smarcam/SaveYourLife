@@ -13,7 +13,7 @@ show_pages_from_config()
 #Menu
 menu = menu()
 #Footer
-footer = footerinicio() 
+footer = footermain()
 #Elements of web
 brand = brand()
 cards = cards()
