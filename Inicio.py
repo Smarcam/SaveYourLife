@@ -24,7 +24,9 @@ st.image("img/logo.png")
 st.image("img/icon.png")
 st.image("img/inicio.png")
 
-st.markdown(menu(), unsafe_allow_html=True)
+menu = menu()
+
+st.markdown(menu, unsafe_allow_html=True)
 
 def brand():
   return """
