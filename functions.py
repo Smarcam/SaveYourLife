@@ -128,7 +128,8 @@ def footer():
 def footerasistente():
   return """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<div class="wrapper" style="position: relative;top: 230px;">
+<div style="position: relative;top: 230px;">
+<div class="wrapper">
     <div class="button">
       <div class="icon">
           <i class="fab fa-python"></i>
@@ -157,6 +158,7 @@ def footerasistente():
       <span>Miguel Á</span>
       <a href="hola.com">⤴️</a>
     </div>
+</div>
 </div>
 """
 #
