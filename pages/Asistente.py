@@ -11,7 +11,7 @@ show_pages_from_config()
 #Menu
 menu = menu()
 #Footer
-footerasistente = footerasistente()
+footerasistente = footer()
 
 st.markdown(menu, unsafe_allow_html=True)
 st.title("Chatbot")
