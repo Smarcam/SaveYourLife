@@ -99,28 +99,27 @@ def footermain():
           <i class="fab fa-python"></i>
       </div>
       <span>V.3.10</span>
-      <a href="hola.com">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-linkedin"></i>
       </div>
       <span>Samuel</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://www.linkedin.com/in/samuelmc-dev/">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-github"></i>
       </div>
       <span>Github</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://github.com/Smarcam/SaveYourLife">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-linkedin"></i>
       </div>
       <span>Miguel Á</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://www.linkedin.com/in/mortdur/">⤴️</a>
     </div>
 </div>
 """
@@ -135,28 +134,27 @@ def footer():
           <i class="fab fa-python"></i>
       </div>
       <span>V.3.10</span>
-      <a href="hola.com">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-linkedin"></i>
       </div>
       <span>Samuel</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://www.linkedin.com/in/samuelmc-dev/">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-github"></i>
       </div>
       <span>Github</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://github.com/Smarcam/SaveYourLife">⤴️</a>
     </div>
     <div class="button">
       <div class="icon">
           <i class="fab fa-linkedin"></i>
       </div>
       <span>Miguel Á</span>
-      <a href="hola.com">⤴️</a>
+      <a href="https://www.linkedin.com/in/mortdur/">⤴️</a>
     </div>
 </div>
 </div>
