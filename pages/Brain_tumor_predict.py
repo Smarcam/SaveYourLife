@@ -4,10 +4,18 @@ import numpy as np
 import time
 import imutils
 import keras
+from st_pages import show_pages_from_config
 from functions import *
 
 #PageConfig
 page_config = importar_config()
+show_pages_from_config()
+#Menu
+menu = menu()
+#Footer
+footer = footer()
+
+st.markdown(menu, unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center; color: black;'>Predicción de Tumores Cerebrales</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: black;'>Proyecto Deep Learning</h2>", unsafe_allow_html=True)
@@ -110,5 +118,10 @@ else:
 
     except:
         st.error("Ocurrió un error al leer la imagen cargada. Por favor, asegúrate de que el archivo que estás cargando es una imagen.")
+        
+#footer       
+st.markdown(footer, unsafe_allow_html=True)
 #CCS
+importar_css('.streamlit/stylefooter.css') 
+importar_css('bootstrap/css/bootstrap.min.css')
 importar_css('.streamlit/style.css')
