@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_chat import message
 import src.chatbot_code as chb
 import src.search as srch
+from st_pages import show_pages_from_config
 import re
 from functions import *
 #PageConfig
