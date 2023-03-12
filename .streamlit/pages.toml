@@ -10,10 +10,10 @@ icon = "💬"
 
 [[pages]]
 path = "pages/Brain_tumor_predict.py"
-name = "Brain Tumor"
+name = "Detector De Tumor Cerebral"
 icon = "🧠"
 
 [[pages]]
 path = "pages/About_me.py"
-name = "About me"
+name = "Sobre Nosotros"
 icon = ":books:"
