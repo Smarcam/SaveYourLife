@@ -8,9 +8,7 @@ https://saveyourlife.streamlit.app/
 
 # Vídeo
 
-[![SaveYourLife](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=WBsIK20DW74"SaveYourLife")
-
-<a href=“https://www.youtube.com/watch?v=WBsIK20DW74”><img src=“https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg” alt=“IMAGE ALT TEXT”></a>
+[![SaveYourLife](https://img.youtube.com/vi/WBsIK20DW74/default.jpg)](https://www.youtube.com/watch?v=WBsIK20DW74"SaveYourLife")
 
 https://www.youtube.com/watch?v=WBsIK20DW74
 
