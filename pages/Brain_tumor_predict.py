@@ -122,6 +122,6 @@ else:
 #footer       
 st.markdown(footer, unsafe_allow_html=True)
 #CCS
-importar_css('.streamlit/stylefooter.css') 
-importar_css('bootstrap/css/bootstrap.min.css')
-importar_css('.streamlit/style.css')
+#importar_css('.streamlit/stylefooter.css') 
+#importar_css('bootstrap/css/bootstrap.min.css')
+#importar_css('.streamlit/style.css')
