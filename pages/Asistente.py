@@ -14,9 +14,10 @@ menu = menu()
 footerasistente = footer()
 
 st.markdown(menu, unsafe_allow_html=True)
-st.markdown("""
-<span class="css-10trblm e16nr0p30" style="color:#28d0ff;text-shadow: 2px 1px 1px #0000002e, 3px 2px 1px #0000004f;">Chatbot</span>
-""", unsafe_allow_html=True)
+st.markdown(menu, unsafe_allow_html=True)
+
+st.title("Chatbot")
+st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 st.header("Chat SaveYourLife")
 
