@@ -8,6 +8,8 @@ https://saveyourlife.streamlit.app/
 
 # Vídeo
 
+[![SaveYourLife](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=WBsIK20DW74"SaveYourLife")
+
 https://www.youtube.com/watch?v=WBsIK20DW74
 
 Trabajo realizado por Samuel Martínez Camacho y Miguel Angel Ortega Durán
