@@ -26,10 +26,10 @@ def menu():
           <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self" style="color:#d1e9ff;font-size: 20px;">Asistente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://saveyourlife.streamlit.app/Brain_tumor_predict" target="_self" style="color:#d1e9ff;font-size: 20px;">Detector De Tumor Cerebral</a> 
+          <a class="nav-link" href="https://saveyourlife.streamlit.app/~/+/Detector De Tumor Cerebral" target="_self" style="color:#d1e9ff;font-size: 20px;">Detector De Tumor Cerebral</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="https://saveyourlife.streamlit.app/About me" target="_self" style="color:#d1e9ff;font-size: 20px;">Sobre Nosotros</a>
+         <a class="nav-link" href="href="https://saveyourlife.streamlit.app/~/+/Sobre Nosotros"" target="_self" style="color:#d1e9ff;font-size: 20px;">Sobre Nosotros</a>
         </li>
       </ul>
     </div>
