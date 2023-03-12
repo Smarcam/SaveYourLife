@@ -29,7 +29,7 @@ def menu():
           <a class="nav-link" href="https://saveyourlife.streamlit.app/~/+/Detector De Tumor Cerebral" target="_self" style="color:#d1e9ff;font-size: 20px;">Detector De Tumor Cerebral</a> 
         </li>
         <li class="nav-item">
-         <a class="nav-link" href="https://saveyourlife.streamlit.app/~/+/Sobre Nosotros"" target="_self" style="color:#d1e9ff;font-size: 20px;">Sobre Nosotros</a>
+         <a class="nav-link" href="https://saveyourlife.streamlit.app/~/+/Sobre Nosotros" target="_self" style="color:#d1e9ff;font-size: 20px;">Sobre Nosotros</a>
         </li>
       </ul>
     </div>
@@ -52,14 +52,14 @@ def brand():
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 137, 177, 0.57)"/><text x="50%" y="50%" fill="rgba(0, 137, 177, 0.57)" dy=".3em"></text></svg>
         <h2 class="fw-normal">Tumor Cerebal</h2>
         <p>Introduce una imagen de radio grafia cerebal y veremos que tal estas.</p>
-        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/Brain Tumor" target="_self">IR &raquo;</a></p>
+        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/~/+/Detector De Tumor Cerebral" target="_self">IR &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 100px; position: absolute;margin-left: 20px;margin-top: 23px;">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 137, 177, 0.57)"/><text x="50%" y="50%" fill="rgba(0, 137, 177, 0.57)" dy=".3em"></text></svg>
         <h2 class="fw-normal">Sobre Nosotros</h2>
         <p>Somos nosotros.</p>
-        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/About me" target="_self">IR &raquo;</a></p>
+        <p><a class="btn btn btn-info" href="https://saveyourlife.streamlit.app/~/+/Sobre Nosotros" target="_self">IR &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 """
