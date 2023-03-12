@@ -14,7 +14,7 @@ menu = menu()
 footerasistente = footer()
 
 st.markdown(menu, unsafe_allow_html=True)
-st.title("Chatbot")
+st.title("Chatbot" style="color:#28d0ff;text-shadow: 2px 1px 1px #0000002e, 3px 2px 1px #0000004f;")
 st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
 
 
@@ -27,7 +27,7 @@ if 'past' not in st.session_state:
     st.session_state['past'] = []
 
 def get_text():
-    input_text = st.text_input("You: ","",
+    input_text = st.text_input("Tú: ","",
                                 placeholder="¿En que puedo ayudarte?",
                                 key="input")
     return input_text
