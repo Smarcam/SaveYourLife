@@ -20,7 +20,7 @@ cards = cards()
 
 col1, col2 = st.columns([5, 20])
 with col1:
-   le.image_clickable("img/textlogo.png", "https://saveyourlife.streamlit.app/Brain%20Tumor")
+   le.image_clickable("img/textlogo.png", "https://saveyourlife.streamlit.app/~/+/Detector De Tumor Cerebral")
 with col2:
   term = st.text_input(" ",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder="Introduzca su búsqueda:",) 
   if term:
