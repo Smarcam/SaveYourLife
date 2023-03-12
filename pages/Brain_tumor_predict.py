@@ -107,7 +107,7 @@ else:
                     if prediction2 == 0:
                         st.write("La imagen corresponde a un cerebro con tumor tipo glioma")
                     elif prediction2 == 1:  
-                        st.write("La imagen corresponde a un cerebro con tumor tipo menignoma")
+                        st.write("La imagen corresponde a un cerebro con tumor tipo meningioma")
                     elif prediction2 == 2:  
                         st.write("La imagen corresponde a un cerebro sano")
                     elif prediction2 == 3:  
