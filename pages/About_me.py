@@ -35,10 +35,10 @@ col1, col2 = st.columns([30,10])
 
 with col1:
     st.markdown("""
-            Somos Miguel Ángel y Samuel, dos alumnos del Master Fp en Inteligencia Artificial y Big Data del centro CPIFP 
+            Somos Miguel Ángel y Samuel, dos alumnos del Master FP en Inteligencia Artificial y Big Data del centro CPIFP 
             Nuevo que hemos creado una red neuronal para la predicción del tipo de tumor cerebral que tiene un paciente. 
             Utilizando nuestro conocimiento en lenguaje de programación Python, hemos desarrollado un modelo preciso para
-            respaldar los analisis médicos en neurología y oncología.
+            respaldar los ánalisis médicos en neurología y oncología.
 
             Además, hemos aplicado técnicas avanzadas de procesamiento del lenguaje natural para desarrollar un chatbot 
             que brinda información y asesoramiento a los usuarios de la web. Estamos orgullosos 
