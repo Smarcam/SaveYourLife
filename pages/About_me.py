@@ -51,7 +51,7 @@ with col1:
             los profesionales médicos para mejorar la calidad de vida de sus pacientes.
             """)
 with col2:
-    components.html('<blockquote class="twitter-tweet"><p lang="es" dir="ltr">SaveYourLife es una pagina que usa Inteligencia Artificial para la predicción de tumores cerebrales mediante imágenes de resonancia magnética<a href="https://t.co/ebvcGxJY87">https://t.co/ebvcGxJY87</a> <a href="https://t.co/dx11NzRFxO">pic.twitter.com/dx11NzRFxO</a></p>&mdash; SaveYourLife (@IabdMaster) <a href="https://twitter.com/IabdMaster/status/1635032646136004608?ref_src=twsrc%5Etfw">March 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',height=420,width=350)
+    components.html('<blockquote class="twitter-tweet"><p lang="es" dir="ltr">SaveYourLife es una pagina que usa Inteligencia Artificial para la predicción de tumores cerebrales mediante imágenes de resonancia magnética<a href="https://t.co/ebvcGxJY87">https://t.co/ebvcGxJY87</a> <a href="https://t.co/dx11NzRFxO">pic.twitter.com/dx11NzRFxO</a></p>&mdash; SaveYourLife (@IabdMaster) <a href="https://twitter.com/IabdMaster/status/1635032646136004608?ref_src=twsrc%5Etfw">March 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',height=450,width=370)
 
 #footer       
 st.markdown(footer, unsafe_allow_html=True)
