@@ -6,6 +6,10 @@
 
 https://saveyourlife.streamlit.app/
 
+# Vídeo
+
+https://www.youtube.com/watch?v=WBsIK20DW74
+
 Trabajo realizado por Samuel Martínez Camacho y Miguel Angel Ortega Durán
 ## ↘️ Justificación y descripción del proyecto.
 Pensamos que puede ser útil para quiénes buscan un lugar para vivir aquí en Málaga. De esta manera, el cliente podrá ver qué presupuesto necesitará para comprar o vender según el tipo de vivienda que esté buscando o vendiendo. Usamos datos reales para que el cliente tenga una estimación más acertada del precio.
