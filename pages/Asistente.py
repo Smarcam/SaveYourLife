@@ -16,7 +16,8 @@ footerasistente = footer()
 st.markdown(menu, unsafe_allow_html=True)
 st.markdown("""
 <span class="css-10trblm e16nr0p30" style="color:#28d0ff;text-shadow: 2px 1px 1px #0000002e, 3px 2px 1px #0000004f;">Chatbot</span>
-"""
+""", unsafe_allow_html=True)
+
 st.header("Chat SaveYourLife")
 
 if 'generated' not in st.session_state:
