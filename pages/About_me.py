@@ -4,6 +4,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 from st_pages import show_pages_from_config
 from functions import *
+import src.load_event as le
 
 #PageConfig
 page_config = importar_config()
