@@ -25,12 +25,13 @@ def stylish_button(link, text):
             bottom: 20px;
             right: 20px;
             display: inline-block;
+            transform: translateY(200%);
             padding: 10px 20px;
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             background-color: #0089b1;
-            color: #fff;
+            color: #fff !important;
             border-radius: 5px;
             transition: background-color 0.3s ease;
             z-index: 9999;
