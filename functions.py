@@ -90,12 +90,26 @@ def cards():
 </div>
 """
 #DONATE
-def donate():
-  return """
-  <a href="https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN">'
-                '<img src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" '
-                'alt="Botón Donar con PayPal"></a>'
-"""
+def stylish_button(link, text):
+    button_html = f'''
+    <style>
+        .my-button {{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #0089b1;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }}
+        .my-button:hover {{
+            background-color: #006d90;
+        }}
+    </style>
+    <a href="{link}" class="my-button">{text}</a>
+    '''
 #FOOTER
 def footermain():
   return """
