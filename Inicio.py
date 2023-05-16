@@ -19,7 +19,7 @@ brand = brand()
 cards = cards()
 def stylish_button(link, text):
     button_html = f'''
-        <style>
+    <style>
         .my-button {{
             position: fixed;
             bottom: 20px;
@@ -33,6 +33,7 @@ def stylish_button(link, text):
             color: #fff;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            z-index: 9999;
         }}
         .my-button:hover {{
             background-color: #006d90;
