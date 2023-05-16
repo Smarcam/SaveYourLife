@@ -16,11 +16,6 @@ menu = menu()
 footer = footermain()
 #Elements of web
 brand = brand()
-# Uso del botón personalizado
-donate_link = "https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN"
-button_text = "Donar con PayPal"
-stylish_button(donate_link, button_text)
-
 cards = cards()
 
 
@@ -39,7 +34,6 @@ st.image("img/inicio_2.jpeg")
 
 st.markdown(menu, unsafe_allow_html=True)
 st.markdown(brand, unsafe_allow_html=True)
-st.markdown(button_html, unsafe_allow_html=True)
 st.markdown(cards, unsafe_allow_html=True)
 st.markdown(footer, unsafe_allow_html=True)
 #CCS
