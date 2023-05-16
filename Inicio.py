@@ -15,8 +15,8 @@ menu = menu()
 #Footer
 footer = footermain()
 #Elements of web
-donate = donate()
 brand = brand()
+donate = donate()
 cards = cards()
 
 
