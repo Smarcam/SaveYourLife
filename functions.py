@@ -21,7 +21,10 @@ def menu():
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: #0089b1">
   <div class="container-fluid" style="margin-left: 120px">
     <a class="navbar-brand" href="https://saveyourlife.streamlit.app" target="_self"><img src="https://saveyourlife.streamlit.app:443/~/+/media/93fd3ac7283a17deb7cf31fad8ecaa703bd9e169ca706a636245461f.png" alt="Mi imagen" style="width: 50px; margin-top: 0px; margin-left: -60px;"></a>
-    <div class="navbar-collapse collapse" id="navbarCollapse" style="margin-left: -20px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
           <a class="nav-link" href="https://saveyourlife.streamlit.app/Asistente" target="_self" style="color:#d1e9ff;font-size: 20px;">Asistente</a>
