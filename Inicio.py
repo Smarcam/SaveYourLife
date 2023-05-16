@@ -16,7 +16,6 @@ menu = menu()
 footer = footermain()
 #Elements of web
 brand = brand()
-donate = donate()
 # Uso del botón personalizado
 donate_link = "https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN"
 button_text = "Donar con PayPal"
