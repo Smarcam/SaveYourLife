@@ -17,7 +17,32 @@ footer = footermain()
 #Elements of web
 brand = brand()
 cards = cards()
+def stylish_button(link, text):
+    button_html = f'''
+    <style>
+        .my-button {{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #0089b1;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }}
+        .my-button:hover {{
+            background-color: #006d90;
+        }}
+    </style>
+    <a href="{link}" class="my-button">{text}</a>
+    '''
+    st.markdown(button_html, unsafe_allow_html=True)
 
+# Uso del botón personalizado
+donate_link = "https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN"
+button_text = "Donar con PayPal"
+stylish_button(donate_link, button_text)
 
 col1, col2 = st.columns([5, 20])
 with col1:
