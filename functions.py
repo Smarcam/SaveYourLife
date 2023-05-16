@@ -92,7 +92,9 @@ def cards():
 #DONATE
 def donate():
   return """
-<<a href="https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN">''<img src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" ''alt="Botón Donar con PayPal"></a>'
+  <a href="https://www.paypal.com/donate?hosted_button_id=K9MYJDDJU35TN">'
+                '<img src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" '
+                'alt="Botón Donar con PayPal"></a>'
 """
 #FOOTER
 def footermain():
