@@ -15,9 +15,10 @@ menu = menu()
 #Footer
 footer = footermain()
 #Elements of web
+donate = donate()
 brand = brand()
 cards = cards()
-donate = donate()
+
 
 col1, col2 = st.columns([5, 20])
 with col1:
