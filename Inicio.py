@@ -35,6 +35,7 @@ st.image("img/inicio_2.jpeg")
 st.markdown(menu, unsafe_allow_html=True)
 st.markdown(brand, unsafe_allow_html=True)
 st.markdown(cards, unsafe_allow_html=True)
+st.markdown(donate, unsafe_allow_html=True)
 st.markdown(footer, unsafe_allow_html=True)
 #CCS
 importar_css('.streamlit/stylefooter.css') 
