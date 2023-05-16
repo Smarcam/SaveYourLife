@@ -24,6 +24,7 @@ def stylish_button(link, text):
             position: fixed;
             bottom: 20px;
             right: 20px;
+            transform: translateY(-500%);
             display: inline-block;
             padding: 10px 20px;
             font-size: 18px;
