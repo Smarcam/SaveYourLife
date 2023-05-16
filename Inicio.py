@@ -17,6 +17,7 @@ footer = footermain()
 #Elements of web
 brand = brand()
 cards = cards()
+donate = donate()
 
 col1, col2 = st.columns([5, 20])
 with col1:
